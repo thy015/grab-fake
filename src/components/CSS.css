@@ -105,3 +105,21 @@ img#des {
 .span-clock{
     margin-left: 15px;
 }
+.btn-fluid{
+    width: inherit;
+  
+}
+.container-button{
+    max-width: 1250px;
+    margin-top: -50px;
+}
+button.btn.btn-fluid {
+    border: solid #747373;
+    color: #747373;
+    font-weight: 700;
+}
+button.btn.btn-fluid:hover{
+    border: solid #00B14F;
+    color: #00B14F;
+    font-weight: 700;
+}

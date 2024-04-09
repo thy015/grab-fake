@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import FluidImg from "./components/FluidImg"
 import SeachBox from "./components/SearchBox"
 import CardHolder from "./components/CardHolder"
+import FluidButton from "./components/FluidButton"
 function App(){
   return <><div><Header></Header>
   <FluidImg></FluidImg>
@@ -11,6 +12,8 @@ function App(){
   <div style={{ marginTop: "150px" }}>
     <CardHolder></CardHolder>
     </div>
-  </div></>
+  </div>
+  <FluidButton></FluidButton>
+  </>
 }
 export default App

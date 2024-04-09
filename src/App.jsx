@@ -4,6 +4,7 @@ import FluidImg from "./components/FluidImg"
 import SeachBox from "./components/SearchBox"
 import CardHolder from "./components/CardHolder"
 import FluidButton from "./components/FluidButton"
+import FoodCategory from "./components/FoodCategory"
 function App(){
   return <><div><Header></Header>
   <FluidImg></FluidImg>
@@ -14,6 +15,7 @@ function App(){
     </div>
   </div>
   <FluidButton></FluidButton>
+  <FoodCategory></FoodCategory>
   </>
 }
 export default App

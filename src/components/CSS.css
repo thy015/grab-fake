@@ -12,9 +12,10 @@ body,html{
     position: absolute;
     z-index: 3;
 }
-.container-header.container-sm {
+.container-header.container-sm{
     padding: 40px;
 }
+
 .grab-logo{
     height: 60px;
 }
@@ -35,12 +36,12 @@ body,html{
     color: #00B14F;
 }
 .grabPage{
-    margin: 20px;
+    margin: 150px 0px -90px 0px;
 }
-#uu-dai{
-    top: 74%;
-    position: absolute;
-    left: 7%;
+.uu-dai {
+    left: 2.5%;
+    position: relative;
+    font-size: 35px;
     font-weight: 700;
 }
 .border-bottom{
@@ -52,7 +53,6 @@ body,html{
     height: 400px;
     z-index: 3;
     top: 16%;
-    left: 7%;
     position: absolute;
     background-color: white;
 }
@@ -91,10 +91,10 @@ img#des {
     right: 11%;
 }
 .card{
-    margin: 10px;
+    width: 350px
 }
-.container-food{
-    margin: 90px;
+.row.row-card {
+    margin: 0 21px;
 }
 .span-card{
     margin:5px 0 0 7px;
@@ -107,11 +107,14 @@ img#des {
 }
 .btn-fluid{
     width: inherit;
-  
+    margin-top: 98px;
 }
 .container-button{
     max-width: 1250px;
     margin-top: -50px;
+}
+.card:hover{
+    cursor: pointer;
 }
 button.btn.btn-fluid {
     border: solid #747373;
@@ -123,3 +126,15 @@ button.btn.btn-fluid:hover{
     color: #00B14F;
     font-weight: 700;
 }
+.uu-dai#category{
+    position: relative;
+}
+.container-category{
+    margin-top: 120px;
+}
+.col-sm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+

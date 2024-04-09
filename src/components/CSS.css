@@ -7,29 +7,74 @@ body,html{
     background-color:transparent;
     display: flex;
     align-items: center;
-    top: 0;
     left: 0;
     right: 0;
     position: absolute;
     z-index: 3;
+}
+.container-header.container-sm {
+    padding: 40px;
 }
 .grab-logo{
     height: 60px;
 }
 .btn-light{
     margin:0 8px 0 8px;
+    
 }
 .btn-group{
     margin-left: auto;
 }
 .img{
    width: 100%;
-   height: 500px;
-   object-fit: cover; 
+   height: 380px;
+   object-fit: cover;
+   z-index: -1;
 }
 #inputPlace{
     color: #00B14F;
 }
 .grabPage{
     margin: 20px;
+}
+#uu-dai{
+    top: 74%;
+    position: absolute;
+    left: 7%;
+    font-weight: 700;
+}
+.border-bottom{
+    color: white;
+    height: 80px;
+}
+.container-search-box{
+    width: 350px;
+    height: 400px;
+    z-index: 3;
+    top: 16%;
+    left: 7%;
+    position: absolute;
+    background-color: white;
+}
+.wrap-input{
+    padding: 24px 0px 0px 15px;
+}
+#af{
+    font-weight: 700;
+}
+#where{
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+#search-input{
+    width: 290px;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+}
+button.btn.btn-search {
+    background-color: #00B14F;
+    width: 290px;
+    height: 50px;
+    font-weight: 650;
+    color: white;
 }

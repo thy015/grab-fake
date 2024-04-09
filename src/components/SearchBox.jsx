@@ -5,8 +5,12 @@ function SearchBox() {
         <div className="wrap-input">
         <h5 id="af">Good Afternoon</h5>
       <h1 id="where">Where should we deliver your food today?</h1>
-      <input id="search-input" placeholder="Nhập địa chỉ của bạn" type="text">
+      <div>
+        <img id="location" src="./src/assets/location.png"></img>
+       <input id="search-input" placeholder="Nhập địa chỉ của bạn" type="text">
       </input>
+      <img id="des" src="https://food.grab.com/static/images/icons/icon-geo-button.svg"></img>
+      </div>
       <div>
       <button type="button" class="btn btn-search">Tìm kiếm</button>
       </div>

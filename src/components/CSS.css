@@ -69,6 +69,7 @@ body,html{
 #search-input{
     width: 290px;
     padding: 10px;
+    padding-left: 37px;
     margin: 10px 10px 10px 0;
 }
 button.btn.btn-search {
@@ -77,4 +78,30 @@ button.btn.btn-search {
     height: 50px;
     font-weight: 650;
     color: white;
+}
+img#location {
+    position: absolute;
+    top: 63.5%;
+    left: 10%;
+    height: 30px;
+}
+img#des {
+    position: absolute;
+    bottom: 30%;
+    right: 11%;
+}
+.card{
+    margin: 10px;
+}
+.container-food{
+    margin: 90px;
+}
+.span-card{
+    margin:5px 0 0 7px;
+}
+.span-star{
+    width: 23px;
+}
+.span-clock{
+    margin-left: 15px;
 }

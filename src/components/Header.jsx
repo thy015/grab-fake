@@ -4,9 +4,20 @@ import { useState } from "react";
 
 
 function Header() {
-  const[header,setHeader]=useState(false)
+  //change nav color when scrolling
+  const[color,setColor]=useState(false)
+  const changeBackGround=()=>{
+   if(window.scrollY>=70){
+    setColor(true)
+   }else{
+    setColor(false)
+   }
+  }
+  window.addEventListener("scroll",changeBackGround)
+
   return (
-    <div className="container-header container-sm">
+    <div className={color ? "shadow p-3 mb-5 rounded container-header active":"container-header"}>
+    <div className="container-sm d-flex justify-content-between align-items-center">
       <img
         className="grab-logo"
         src="https://food.grab.com/static/images/logo-grabfood2.svg"
@@ -40,6 +51,7 @@ function Header() {
           </ul>
         </button>
       </div>
+    </div>
     </div>
   );
 }

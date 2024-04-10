@@ -6,8 +6,6 @@ function Words({words,inputplace}) {
       <h2 id="uu-dai">
             {words}<span id="inputPlace">{inputplace}</span></h2>
       </div>
- 
-
       </>
   );
 }

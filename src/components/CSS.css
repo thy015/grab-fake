@@ -45,6 +45,7 @@ body,html{
     margin: 150px 0px 30px 0px;
 }
 #uu-dai {
+    margin-bottom: 50px;
     margin-top: 50px;
     left: 2.5%;
     position: relative;
@@ -55,6 +56,7 @@ body,html{
     color: white;
     height: 80px;
 }
+/* search box */
 .container-search-box{
     width: 350px;
     height: 400px;
@@ -149,12 +151,38 @@ button.btn.btn-fluid:hover{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
+img.card-img-top.card-category {
+    
+}
 .col-sm {
     align-items: center;
     display: flex;
     justify-content: center;
 }
-.container-food.container-md {
-    margin-top: 50px;
+/* why should order */
+.why-words{
+    font-size: 15px;
 }
+.check{
+    width: 15px;
+    height: 20px;
+}
+.order-space{
+    margin-left: 10px;
+}
+.spacing-order{
+    margin-bottom: 20px;
+}
+li{
+    text-align: -webkit-match-parent;
+}
+ul.list-unstyled {
+    box-sizing: border-box;
+    display: block;
+    margin-left: 30px;
+    width: 96%;
+}
+
+
+
+

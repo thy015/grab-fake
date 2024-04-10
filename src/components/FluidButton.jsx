@@ -1,7 +1,7 @@
 import "./CSS.css";
 function FluidButton({ buttonText }) {
   return (
-    <div className="container-fluid container-button">
+    <div className="container-sm container-button">
       <button type="button" class="btn btn-fluid">
        {buttonText}
       </button>

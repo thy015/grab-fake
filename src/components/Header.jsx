@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CSS.css";
 import { useState } from "react";
 
 
-
 function Header() {
+  const[header,setHeader]=useState(false)
   return (
     <div className="container-header container-sm">
       <img
@@ -43,5 +43,4 @@ function Header() {
     </div>
   );
 }
-
 export default Header;

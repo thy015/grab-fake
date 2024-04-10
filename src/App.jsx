@@ -6,6 +6,7 @@ import CardHolder from "./components/CardHolder"
 import FluidButton from "./components/FluidButton"
 import FoodCategory from "./components/FoodCategory"
 import BackGroundImg from "./components/BackGroundImg"
+import WhyShouldOrder from "./components/WhyShouldOrder"
 function App(){
   return <><div><Header></Header>
   <BackGroundImg></BackGroundImg>
@@ -20,6 +21,7 @@ function App(){
   <Words words="There's something for everyone!"></Words>
   <FoodCategory></FoodCategory>
   <Words words="Vì sao bạn nên Order trên GrabFood?"></Words>
+  <WhyShouldOrder></WhyShouldOrder>
   </>
 }
 export default App

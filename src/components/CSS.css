@@ -171,18 +171,36 @@ img.card-img-top.card-category {
     margin-left: 10px;
 }
 .spacing-order{
+    box-sizing: border-box;
     margin-bottom: 20px;
 }
 li{
-    text-align: -webkit-match-parent;
+    text-align: justify;
 }
 ul.list-unstyled {
     box-sizing: border-box;
     display: block;
     margin-left: 30px;
-    width: 96%;
+    width: 95%;
 }
+/* WhatisGrabFood */
+.container-title{
+    margin-left: 32px;
+    width: 97.5%;
+    
+}
+.what-des{
+    width: inherit;
 
+}
+.what-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.what-title,
+.what-des{
+    text-align: justify;
+}
 
 
 

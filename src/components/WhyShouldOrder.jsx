@@ -7,8 +7,6 @@ function WhyShouldOrder() {
           <li>
             <div className="spacing-order"><div>
             </div>
-              <img src="./src/assets/check.png" className="check" />
-              <span className="order-space"></span>
               <span className="fw-bold why-words">Nhanh nhất </span>
               <span className="why-words">
                 - GrabFood cung cấp dịch vụ giao đồ ăn nhanh nhất thị trường.
@@ -17,8 +15,6 @@ function WhyShouldOrder() {
           </li>
           <li>
             <div className="spacing-order">
-              <img src="./src/assets/check.png" className="check" />
-              <span className="order-space"></span>
               <span className="fw-bold why-words">Dễ dàng nhất </span>
               <span className="why-words">
                 - Giờ đây, bạn chỉ cần thực hiện vài cú nhấp chuột hoặc chạm nhẹ
@@ -30,8 +26,6 @@ function WhyShouldOrder() {
           </li>
           <li>
             <div className="spacing-order">
-              <img src="./src/assets/check.png" className="check" />
-              <span className="order-space"></span>
               <span className="fw-bold why-words">Đáp ứng mọi nhu cầu </span>
               <span className="why-words">
                 - Từ món ăn đặc sản địa phương đến các nhà hàng được ưa thích,
@@ -41,9 +35,7 @@ function WhyShouldOrder() {
             </div>
           </li>
           <li>
-            <div className="spacing-order">
-              <img src="./src/assets/check.png" className="check" />
-              <span className="order-space"></span>
+            <div className="spacing-order">         
               <span className="fw-bold why-words">Thanh toán dễ dàng </span>
               <span className="why-words">
                 - Giao và nhận đồ ăn thật dễ dàng. Thanh toán bằng GrabPay thậm
@@ -53,8 +45,6 @@ function WhyShouldOrder() {
           </li>
           <li>
             <div className="spacing-order">
-              <img src="./src/assets/check.png" className="check" />
-              <span className="order-space"></span>
               <span className="fw-bold why-words">Nhiều quà tặng hơn </span>
               <span className="why-words">
                 - Tích điểm GrabRewards cho mỗi đơn hàng của bạn và sử dụng điểm

@@ -24,7 +24,7 @@ function App() {
         <SeachBox></SeachBox>
       </div>
       <div>
-        <CardHolder></CardHolder>
+        <CardHolder ></CardHolder>
       </div>
       <NoEffectButton buttonText="See All Promotions" />
       <Words words="There's something for everyone!"></Words>

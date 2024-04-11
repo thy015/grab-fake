@@ -172,15 +172,27 @@ img.card-img-top.card-category {
 }
 .spacing-order{
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 li{
     text-align: justify;
+    position: relative;
+}
+li::before{
+    content: "";
+    left: -30px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: 84%;
+    transform: translateY(32%);
+    background-repeat: no-repeat;
+    background-image:url("./src/assets/check.png");
 }
 ul.list-unstyled {
     box-sizing: border-box;
     display: block;
-    margin-left: 30px;
+    margin-left: 70px;
     width: 95%;
 }
 /* WhatisGrabFood */

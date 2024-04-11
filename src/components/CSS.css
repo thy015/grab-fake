@@ -151,9 +151,7 @@ button.btn.btn-fluid:hover{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-img.card-img-top.card-category {
-    
-}
+
 .col-sm {
     align-items: center;
     display: flex;
@@ -193,7 +191,7 @@ ul.list-unstyled {
     box-sizing: border-box;
     display: block;
     margin-left: 70px;
-    width: 95%;
+    width: 92%;
 }
 /* WhatisGrabFood */
 .container-title{
@@ -212,6 +210,20 @@ ul.list-unstyled {
 .what-title,
 .what-des{
     text-align: justify;
+}
+.border-what{
+    height: 10px;
+    margin-bottom: 20px;
+    width: 98%;
+}
+/* Style Li */
+.li-more{
+    list-style: none;
+    width: 98%;
+}
+.li-more::before{
+    content: "";
+    background-image: none;
 }
 
 

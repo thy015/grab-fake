@@ -7,7 +7,8 @@ import FoodCategory from "./components/FoodCategory";
 import BackGroundImg from "./components/BackGroundImg";
 import WhyShouldOrder from "./components/WhyShouldOrder";
 import WhatsGrabFood from "./components/WhatsGrabFood";
-import NoEffectButton from "./components/NoEffectButton";
+import NavButton from "./components/NavButton";
+import Footer from "./components/Footer";
 import { useState } from "react";
 function App() {
   //read more button
@@ -25,7 +26,7 @@ function App() {
       <div>
         <CardHolder ></CardHolder>
       </div>
-      <NoEffectButton buttonText="See All Promotions" />
+      <NavButton buttonText="See All Promotions" />
       <Words words="There's something for everyone!"></Words>
       <FoodCategory></FoodCategory>
       <Words words="Vì sao bạn nên Order trên GrabFood?"></Words>
@@ -37,6 +38,7 @@ function App() {
       ></WhatsGrabFood>
       <FluidButton buttonText="Read More">
       </FluidButton>
+      <Footer></Footer>
     </>
   );
 }

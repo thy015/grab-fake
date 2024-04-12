@@ -244,7 +244,7 @@ ul.list-unstyled {
 /* Wrapcontent */
 .container-footer{
     background-color: #f7f7f7;
-    height: 450px;
+    height: 550px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -268,5 +268,50 @@ ul.list-unstyled {
 .footer{
     width: 100%;
     height: 430px;
+    background-color: #00B14F;
+}
+.wrap-li{
+    width: 280px;
+    height: 76px;
+}
+.footer-all-wrap {
+    display: flex;
+    margin-left: 35px;
+}
+.footer-li{
+    list-style: none;
+    color: white;
+    margin: 30px 0 30px 0;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+}
+.border-footer{
+    height: 0px;
+    margin-left: 25px;
+    width: 96%;
+}
+.wrap-img {
+    margin-top: 30px;
+}
+.footer-img{
+    cursor: pointer;
+    margin: 20px;
+}
+.span-li{
+    list-style: none;
+    margin-right: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.span-wrap{
+    justify-content: space-between;
+    display: flex;
+}
+.span-wrap-li{
+    display: flex;
+}
+.container-max-footer{
     background-color: #00B14F;
 }

@@ -113,27 +113,19 @@ function FluidButton({ buttonText }) {
               ></img>
             </a>
             <span>
-            <a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=vi_VN&pid=other_websites&c=direct&is_retargeting=true&af_prt=food.grab.com">
-              <img
-                className="appstore"
-                src="https://food.grab.com/static/images/logo-playstore.svg"
-              ></img>
+              <a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=vi_VN&pid=other_websites&c=direct&is_retargeting=true&af_prt=food.grab.com">
+                <img
+                  className="appstore"
+                  src="https://food.grab.com/static/images/logo-playstore.svg"
+                ></img>
               </a>
             </span>
           </div>
         </div>
       </div>
-      <div className="footer">
-      <div className="container-sm">
-      <img
-        className="grab-logo"
-        src="	https://food.grab.com/static/images/logo-grabfood-white2.svg"
-        alt="grab-logo"
-      />
-      <div class="border-bottom border-what"></div>
       </div>
-            </div>
-    </div>
+      
+    
   );
 }
 export default FluidButton;

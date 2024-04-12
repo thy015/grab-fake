@@ -261,5 +261,12 @@ ul.list-unstyled {
     justify-content: space-around;
     align-items: baseline;
 }
-
-
+.appstore{
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 430px;
+    background-color: #00B14F;
+}

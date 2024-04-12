@@ -79,30 +79,60 @@ function FluidButton({ buttonText }) {
       <div className="container-footer">
         <div className="container-sm container-wrap-content">
           <div class="wrap-content">
-            <img style={{ width: '150px', margin:'10px' }}
+            <img
+              style={{ width: "150px", margin: "10px" }}
               src="https://food.grab.com/static/page-home/bottom-food-options.svg"
               alt="Image"
             ></img>
-            <h4 class="fw-bold" style={{ fontSize: '18px' }}>Curated restaurant</h4>
-            <p style={{ fontSize: '14px' }}>
+            <h4 class="fw-bold" style={{ fontSize: "18px" }}>
+              Curated restaurant
+            </h4>
+            <p style={{ fontSize: "14px" }}>
               From small bites to big meals, we won't limit your appetite. Go
               ahead and order all you want.
             </p>
           </div>
           <div class="wrap-content">
-            <img style={{ width: '150px', margin:'20px' }}
+            <img
+              style={{ width: "150px", margin: "20px" }}
               src="https://food.grab.com/static/images/ilus-cool-features-app.svg"
               alt="Image"
             ></img>
-            <h4 class="fw-bold" style={{ fontSize: '18px' }}>More cool features available on the app</h4>
-            <p style={{ fontSize: '14px', marginRight:'15px'}}>
-            Download Grab app to use other payment methods and enjoy seamless communication with your driver.
+            <h4 class="fw-bold" style={{ fontSize: "18px" }}>
+              More cool features available on the app
+            </h4>
+            <p style={{ fontSize: "14px", marginRight: "15px" }}>
+              Download Grab app to use other payment methods and enjoy seamless
+              communication with your driver.
             </p>
-            <img src="https://food.grab.com/static/images/logo-appstore.svg" style={{ marginRight:"18px" }}></img><span><img src="https://food.grab.com/static/images/logo-playstore.svg"></img></span>
+            <a href="https://apps.apple.com/us/app/grab-%C4%91%E1%BA%B7t-xe-giao-%C4%91%E1%BB%93-%C4%83n/id647268330?l=vi&af_prt=food.grab.com&c=direct&is_retargeting=true&pid=other_websites">
+              <img
+                className="appstore"
+                src="https://food.grab.com/static/images/logo-appstore.svg"
+                style={{ marginRight: "18px" }}
+              ></img>
+            </a>
+            <span>
+            <a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=vi_VN&pid=other_websites&c=direct&is_retargeting=true&af_prt=food.grab.com">
+              <img
+                className="appstore"
+                src="https://food.grab.com/static/images/logo-playstore.svg"
+              ></img>
+              </a>
+            </span>
           </div>
-          
         </div>
       </div>
+      <div className="footer">
+      <div className="container-sm">
+      <img
+        className="grab-logo"
+        src="	https://food.grab.com/static/images/logo-grabfood-white2.svg"
+        alt="grab-logo"
+      />
+      <div class="border-bottom border-what"></div>
+      </div>
+            </div>
     </div>
   );
 }

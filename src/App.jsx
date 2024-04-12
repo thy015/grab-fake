@@ -5,8 +5,6 @@ import { useState } from "react";
 import Detail from "./components/Detail";
 import { Routes, Route, Link } from "react-router-dom";
 function App() {
-  //read more button
-  const [show, setShow] = useState(false);
 
   return (
     <>

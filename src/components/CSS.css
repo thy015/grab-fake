@@ -315,3 +315,23 @@ ul.list-unstyled {
 .container-max-footer{
     background-color: #00B14F;
 }
+/* Detail */
+.search-header {
+    height: 70px;
+    width: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input#search-detail {
+    width: 380px;
+    height: 40px;
+    padding: 0 0 0 40px;
+    position: relative;
+}
+img#img-location{
+    margin-left: 25px;
+    z-index: 3;
+    left: 24%;
+    position: absolute;
+}

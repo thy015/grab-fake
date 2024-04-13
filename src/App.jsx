@@ -3,15 +3,19 @@ import Body_Home from "./components/Body_Home";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import Detail from "./components/Detail";
-import { Routes, Route, Link } from "react-router-dom";
-function App() {
+import { Routes, Route } from "react-router-dom";
 
+function App() {
   return (
     <>
       <div>
         <Header></Header>
-        <Body_Home></Body_Home>
+        <Routes>
+          <Route path="/" element={<Body_Home />} />
+          <Route path="/Detail" element={<Detail />} />
+        </Routes>
       </div>
+
       <Footer></Footer>
     </>
   );

@@ -377,3 +377,14 @@ img.add-button {
 .row.row-cols-1.row-cols-md-3.g-4 {
     margin-left: 10px;
 }
+:where(.css-dev-only-do-not-override-1kuana8).ant-drawer .ant-drawer-body {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    padding:0px
+}
+.inputContent {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}

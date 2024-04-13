@@ -186,7 +186,7 @@ li{
     text-align: justify;
     position: relative;
 }
-li::before{
+.li-check::before{
     content: "";
     left: -30px;
     position: absolute;
@@ -328,6 +328,7 @@ input#search-detail {
     height: 40px;
     padding: 0 0 0 40px;
     position: relative;
+    z-index: 5;
 }
 img#img-location{
     margin-left: 25px;
@@ -362,6 +363,17 @@ img#img-location{
 }
 .divider-detail{
     height: 8px;
-    background: #e1d5d5;
+    background: #f7f7f7;
     width: 100%;
+}
+/* compre */
+.container-compre{
+    padding-top: 20px;
+}
+img.add-button {
+    margin-left: 181px;
+    margin-bottom: 20px;
+}
+.row.row-cols-1.row-cols-md-3.g-4 {
+    margin-left: 10px;
 }

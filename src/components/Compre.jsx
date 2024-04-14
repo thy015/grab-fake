@@ -41,6 +41,41 @@ function Compre() {
       value: "6",
       price: "",
     },
+    {
+      label: "Tắc Muối Mơ Ngâm Hạt Chia cỡ V",
+      value: "7",
+      price: "14.000",
+    },
+    {
+      label: "Coca-Cola Cỡ Lớn",
+      value: "8",
+      price: "5.000",
+    },
+    {
+      label: "Cà Phê Sữa Đá Cỡ Vừa",
+      value: "9",
+      price: "8.000",
+    },
+    {
+      label: "Americano Đá Viên Cỡ Vừa",
+      value: "10",
+      price: "18.000",
+    },
+    {
+      label: "Sữa Chua Uống Dâu Tây",
+      value: "11",
+      price: "44.000",
+    },
+    {
+      label: "Matcha Đá Viên Cỡ Lớn",
+      value: "12",
+      price: "58.000",
+    },
+    {
+      label: "Americano Nóng Cỡ Nhỏ",
+      value: "13",
+      price: "18.000",
+    },
   ];
   return (
     <>
@@ -407,7 +442,7 @@ function Compre() {
           footer={
             <button
               className="btn btn-success"
-              style={{ color: "white", backgroundColor: "#00B14F" }}
+              style={{ color: "white", backgroundColor: "#00B14F",float:"right",borderColor:"transparent" }}
             >
               Add to basket - 119.000 đ
             </button>
@@ -461,7 +496,7 @@ function Compre() {
           </div>
           <div className="divider-detail" style={{ width: "100%" }}></div>
 
-          <div className="ant-drawer-body" style={{ height: "100%" }}>
+          <div className="body-drawer" style={{ height: "100%" }}>
             {/* padding */}
             <div className="container-checkbox" style={{ padding: "24px" }}>
               {/* Checkbox */}
@@ -502,21 +537,23 @@ function Compre() {
             {/*  */}
             <div className="divider-detail" style={{ width: "100%" }}></div>
             <div className="container-checkbox" style={{ padding: "24px" }}>
-              <h5 style={{ fontWeight: "600" }}>Chọn món ăn kèm</h5>
+              <h5 style={{ fontWeight: "600" }}>Chọn nước</h5>
               <div className="wrap-checkbox">
               {options
-                  .filter((option) => ["4", "5", "6"].includes(option.value))
+                  .filter((option) => ["7", "8", "9","10","11","12"].includes(option.value))
                   .map((option) => (
                     <div key={option.value} className="checkbox-option">
                       <Checkbox value={option.value}>
                         <div className="inputContent">
                           <span className="label">{option.label}</span>
+                          <span className="price">{option.price}đ</span>
                         </div>
                       </Checkbox>
                     </div>
                   ))}
               </div>
               </div>
+              <div className="divider-detail" style={{ width: "100%" }}></div>
           </div>
         </Drawer>
       </div>

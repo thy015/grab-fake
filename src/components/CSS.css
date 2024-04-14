@@ -388,3 +388,6 @@ img.add-button {
     display: flex;
     justify-content: space-between;
 }
+.ant-drawer-body {
+    overflow: auto;
+}

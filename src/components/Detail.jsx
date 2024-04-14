@@ -173,7 +173,7 @@ function Detail() {
                       <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
                       <span className="card-text span-card">
                         50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì{" "}
-                      </span>{" "}
+                      </span>
                     </small>
                   </p>
                 </div>

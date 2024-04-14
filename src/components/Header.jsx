@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./CSS.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import shop from "../images/shopping-bag.png"
 function Header() {
   //change nav color when scrolling
   const [color, setColor] = useState(false);
@@ -33,7 +33,7 @@ function Header() {
         </Link>
         <div className="btn-group">
           <button type="button" class="btn btn-light ">
-            <img src="/images/shopping-bag.png" alt="bag" srcset="" />
+            <img src={shop} alt="bag" srcset="" />
           </button>
           <button type="button" class="btn btn-light ">
             Đăng nhập/Đăng ký

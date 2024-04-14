@@ -4,6 +4,7 @@ import Words from "./Words";
 import { Checkbox } from "antd";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import add from "../images/add.png"
 function Compre() {
   // drawer
   const [visible, setVisible] = useState(false);
@@ -230,7 +231,7 @@ function Compre() {
                         </p>
                         <img
                           className="add-button"
-                          src="/images/add.png"
+                          src={add}
                         ></img>
                       </div>
                     </div>
@@ -267,85 +268,7 @@ function Compre() {
                         <p style={{ fontWeight: "500" }}>119.000</p>
                         <img
                           className="add-button"
-                          src="/images/add.png"
-                        ></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
-
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img
-                          className="add-button"
-                          src="/images/add.png"
-                        ></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
-
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img
-                          className="add-button"
-                          src="/images/add.png"
+                          src={add}
                         ></img>
                       </div>
                     </div>
@@ -385,7 +308,7 @@ function Compre() {
                         <p style={{ fontWeight: "500" }}>119.000</p>
                         <img
                           className="add-button"
-                          src="/images/add.png"
+                          src={add}
                         ></img>
                       </div>
                     </div>
@@ -423,7 +346,85 @@ function Compre() {
                         <p style={{ fontWeight: "500" }}>119.000</p>
                         <img
                           className="add-button"
-                          src="/images/add.png"
+                          src={add}
+                        ></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div
+                  className="card"
+                  style={{ width: "385px", height: "220px" }}
+                >
+                  {/* Nội dung thẻ card */}
+                  <div className="row g-0">
+                    <div className="col-md-4">
+                      <img
+                        style={{ margin: "15px" }}
+                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                        className="card-img"
+                      />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body" style={{ marginLeft: "15px" }}>
+                        <p
+                          className="card-title"
+                          style={{ fontWeight: "400", fontSize: "16px" }}
+                        >
+                          Combo 2 người - C
+                        </p>
+
+                        <p
+                          className="card-text"
+                          style={{ color: "#9a9a9a", fontSize: "15px" }}
+                        >
+                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
+                          bao gồm 2x Tương Cà
+                        </p>
+                        <p style={{ fontWeight: "500" }}>119.000</p>
+                        <img
+                          className="add-button"
+                          src={add}
+                        ></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="card"
+                  style={{ width: "385px", height: "220px" }}
+                >
+                  {/* Nội dung thẻ card */}
+                  <div className="row g-0">
+                    <div className="col-md-4">
+                      <img
+                        style={{ margin: "15px" }}
+                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                        className="card-img"
+                      />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body" style={{ marginLeft: "15px" }}>
+                        <p
+                          className="card-title"
+                          style={{ fontWeight: "400", fontSize: "16px" }}
+                        >
+                          Combo 2 người - C
+                        </p>
+
+                        <p
+                          className="card-text"
+                          style={{ color: "#9a9a9a", fontSize: "15px" }}
+                        >
+                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
+                          bao gồm 2x Tương Cà
+                        </p>
+                        <p style={{ fontWeight: "500" }}>119.000</p>
+                        <img
+                          className="add-button"
+                          src={add}
                         ></img>
                       </div>
                     </div>

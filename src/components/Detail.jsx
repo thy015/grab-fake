@@ -1,7 +1,11 @@
 import "./CSS.css";
 import Words from "./Words";
 import { Link } from "react-router-dom";
-
+import search from "../images/search.png"
+import food1 from "../images/food-1.png"
+import food2 from "../images/food-2.png"
+import food3 from "../images/food-3.png"
+import food4 from "../images/food-4.png"
 function Detail() {
   return (
     <>
@@ -23,7 +27,7 @@ function Detail() {
           >
             <img
               id="search-icon"
-              src="/images/search.png"
+              src={search}
               alt="search"
             ></img>
             <input
@@ -143,7 +147,7 @@ function Detail() {
             <div className="containerCard">
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-1.png"
+                  src={food1}
                   className="card-img-top"
                   alt="..."
                 />
@@ -178,7 +182,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-1.png"
+                  src={food1}
                   className="card-img-top"
                   alt="..."
                 />
@@ -213,7 +217,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-4.png"
+                  src={food4}
                   className="card-img-top"
                   alt="..."
                 />
@@ -248,7 +252,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-2.png"
+                  src={food2}
                   className="card-img-top"
                   alt="..."
                 />
@@ -284,7 +288,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-2.png"
+                  src={food2}
                   className="card-img-top"
                   alt="..."
                 />
@@ -320,7 +324,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-2.png"
+                  src={food2}
                   className="card-img-top"
                   alt="..."
                 />
@@ -356,7 +360,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-2.png"
+                  src={food2}
                   className="card-img-top"
                   alt="..."
                 />
@@ -392,7 +396,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="/images/food-3.png"
+                  src={food3}
                   className="card-img-top"
                   alt="..."
                 />

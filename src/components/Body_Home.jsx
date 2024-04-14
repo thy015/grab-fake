@@ -5,13 +5,18 @@ import FluidButton from "./FluidButton";
 import Detail from "./Detail";
 import { Routes, Route, Link } from "react-router-dom";
 import Footer from "./Footer";
-
+import food1 from "../images/food-1.png"
+import food2 from "../images/food-2.png"
+import food3 from "../images/food-3.png"
+import food4 from "../images/food-4.png"
+import backgroundimg from "../images/mon-an.jpg"
+import location from "../images/location.png"
 function Body_Home() {
 
   return (
     <>
    
-      <img src= "/images/mon-an.jpg"class="img" alt="..."></img>
+      <img src= {backgroundimg}class="img" alt="..."></img>
       <div class="border-bottom">.</div>
       <div className="grabPage container-sm"></div>
       <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
@@ -22,7 +27,7 @@ function Body_Home() {
         <div className="containerCard">
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="/images/food-1.png"
+              src={food1}
               className="card-img-top"
               alt="..."
             />
@@ -57,7 +62,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="/images/food-2.png"
+              src={food2}
               className="card-img-top"
               alt="..."
             />
@@ -93,7 +98,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="/images/food-3.png"
+              src={food3}
               className="card-img-top"
               alt="..."
             />
@@ -128,7 +133,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="/images/food-4.png"
+              src={food4}
               className="card-img-top"
               alt="..."
             />
@@ -175,7 +180,7 @@ function Body_Home() {
                   <div>
                     <img
                       id="location"
-                      src="/images/location.png"
+                      src={location}
                       alt="Location"
                     ></img>
                     <input
@@ -341,7 +346,7 @@ function Body_Home() {
       <Words words="Vì sao bạn nên Order trên GrabFood?"></Words>
       <div className="container-sm">
         <ul className="list-unstyled">
-          <li className="li-check">
+          <li className="li-check" >
             <div className="spacing-order"><div>
             </div>
               <span className="fw-bold why-words">Nhanh nhất </span>

@@ -1,4 +1,8 @@
 import "./CSS.css";
+
+import fb from "../images/facebook.png"
+import ig from "../images/instagram.png"
+import tt from "../images/twitter-sign.png"
 function Footer() {
   return (
     <>
@@ -34,13 +38,13 @@ function Footer() {
                 </div>
                 <div className="wrap-img">
                   <span className="footer-img">
-                    <img src="./src/assets/facebook.png"></img>
+                    <img src={fb}></img>
                   </span>
                   <span className="footer-img">
-                    <img src="./src/assets/instagram.png"></img>
+                    <img src={ig}></img>
                   </span>
                   <span className="footer-img">
-                    <img src="./src/assets/twitter-sign.png"></img>
+                    <img src={tt}></img>
                   </span>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+
 body,html{
     margin: 0;
     padding: 0;
@@ -195,8 +196,9 @@ li{
     background-size: 84%;
     transform: translateY(32%);
     background-repeat: no-repeat;
-    background-image:url("./src/assets/check.png");
+    background-image:url("../images/check.png");
 }
+
 ul.list-unstyled {
     box-sizing: border-box;
     display: block;

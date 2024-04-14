@@ -3,6 +3,7 @@ import "./CSS.css";
 import Words from "./Words";
 import { Checkbox } from "antd";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Compre() {
   // drawer
   const [visible, setVisible] = useState(false);
@@ -96,19 +97,18 @@ function Compre() {
             >
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <a
+                  <Link to={"/"}
                     style={{ textDecoration: "none", color: "#00a5cf" }}
-                    href="#"
                   >
                     Trang chủ{" "}
                     <img
                       src="https://food.grab.com/static/images/icons/icon-next.svg"
                       style={{ width: "10px", marginTop: "-3px" }}
                     ></img>
-                  </a>
+                  </Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <a
+                  <Link to={"/Detail"}
                     style={{ textDecoration: "none", color: "#00a5cf" }}
                     href="#"
                   >
@@ -117,7 +117,7 @@ function Compre() {
                       src="https://food.grab.com/static/images/icons/icon-next.svg"
                       style={{ width: "10px", marginTop: "-3px" }}
                     ></img>
-                  </a>
+                  </Link>
                 </li>
                 <li
                   style={{ color: "black" }}
@@ -508,7 +508,9 @@ function Compre() {
                   .map((option) => (
                     <div key={option.value} className="checkbox-option">
                       <Checkbox value={option.value}>
-                      <span className="label">{option.label}</span>
+                      <div className="inputContent">
+                          <span className="label">{option.label}</span>
+                        </div>
                       </Checkbox>
                           <span className="price">{option.price} đ</span>
                     </div>

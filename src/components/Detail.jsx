@@ -106,16 +106,13 @@ function Detail() {
           >
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
-                <a
-                  style={{ textDecoration: "none", color: "#00a5cf" }}
-                  href="#"
-                >
-                  Trang chủ{" "}
+                <Link to={"/"}
+                  style={{ textDecoration: "none", color: "#00a5cf" }}>
+                  Trang chủ{" "}</Link>
                   <img
                     src="https://food.grab.com/static/images/icons/icon-next.svg"
                     style={{ width: "10px", marginTop: "-3px" }}
                   ></img>
-                </a>
               </li>
               <li className="breadcrumb-item">
                 <a

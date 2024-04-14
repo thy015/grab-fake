@@ -12,7 +12,7 @@ function Body_Home() {
   return (
     <>
    
-      <img src= "./src/assets/mon-an.jpg"class="img" alt="..."></img>
+      <img src= "./dist/images/mon-an.jpg"class="img" alt="..."></img>
       <div class="border-bottom">.</div>
       <div className="grabPage container-sm"></div>
       <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
@@ -23,7 +23,7 @@ function Body_Home() {
         <div className="containerCard">
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./src/assets/food-1.png"
+              src="./dist/images/food-1.png"
               className="card-img-top"
               alt="..."
             />
@@ -58,7 +58,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./src/assets/food-2.png"
+              src="./dist/images/food-2.png"
               className="card-img-top"
               alt="..."
             />
@@ -94,7 +94,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./src/assets/food-3.png"
+              src="./dist/images/food-3.png"
               className="card-img-top"
               alt="..."
             />
@@ -129,7 +129,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./src/assets/food-4.png"
+              src="./dist/images/food-4.png"
               className="card-img-top"
               alt="..."
             />
@@ -176,7 +176,7 @@ function Body_Home() {
                   <div>
                     <img
                       id="location"
-                      src="./src/assets/location.png"
+                      src="./dist/images/location.png"
                       alt="Location"
                     ></img>
                     <input

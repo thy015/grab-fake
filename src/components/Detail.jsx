@@ -22,7 +22,7 @@ function Detail() {
           >
             <img
               id="search-icon"
-              src="./src/assets/search.png"
+              src="./dist/images/search.png"
               alt="search"
             ></img>
             <input
@@ -142,7 +142,7 @@ function Detail() {
             <div className="containerCard">
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-1.png"
+                  src="./dist/images/food-1.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -177,7 +177,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-1.png"
+                  src="./dist/images/food-1.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -212,7 +212,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-4.png"
+                  src="./dist/images/food-4.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -247,7 +247,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-2.png"
+                  src="./dist/images/food-2.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -283,7 +283,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-2.png"
+                  src="./dist/images/food-2.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -319,7 +319,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-2.png"
+                  src="./dist/images/food-2.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -355,7 +355,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-2.png"
+                  src="./dist/images/food-2.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -391,7 +391,7 @@ function Detail() {
               </div>
               <div className="card border-0" style={{ width: "280px" }}>
                 <img
-                  src="./src/assets/food-3.png"
+                  src="./dist/images/food-3.png"
                   className="card-img-top"
                   alt="..."
                 />

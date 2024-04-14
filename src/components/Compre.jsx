@@ -415,7 +415,7 @@ function Compre() {
           onClose={() => {
             setVisible(false);
           }}
-          width={400}
+          width={500}
         >
           <div
             className="card border-0"
@@ -499,7 +499,24 @@ function Compre() {
                   ))}
               </div>
             </div>
+            {/*  */}
             <div className="divider-detail" style={{ width: "100%" }}></div>
+            <div className="container-checkbox" style={{ padding: "24px" }}>
+              <h5 style={{ fontWeight: "600" }}>Chọn món ăn kèm</h5>
+              <div className="wrap-checkbox">
+              {options
+                  .filter((option) => ["4", "5", "6"].includes(option.value))
+                  .map((option) => (
+                    <div key={option.value} className="checkbox-option">
+                      <Checkbox value={option.value}>
+                        <div className="inputContent">
+                          <span className="label">{option.label}</span>
+                        </div>
+                      </Checkbox>
+                    </div>
+                  ))}
+              </div>
+              </div>
           </div>
         </Drawer>
       </div>

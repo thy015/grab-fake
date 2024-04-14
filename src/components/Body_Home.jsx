@@ -4,10 +4,15 @@ import WhatsGrabFood from "./WhatsGrabFood";
 import FluidButton from "./FluidButton";
 import Detail from "./Detail";
 import { Routes, Route, Link } from "react-router-dom";
-function BackGroundImg() {
+import Footer from "./Footer";
+
+
+function Body_Home() {
+
   return (
     <>
-      <img src="./src/assets/mon-an.jpg" class="img" alt="..."></img>
+   
+      <img src= "./src/assets/mon-an.jpg"class="img" alt="..."></img>
       <div class="border-bottom">.</div>
       <div className="grabPage container-sm"></div>
       <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
@@ -395,8 +400,9 @@ function BackGroundImg() {
       ></WhatsGrabFood>
       </div>
       <FluidButton buttonText={"Read more"}></FluidButton>
-      
+      <Footer></Footer>
     </>
   );
-}
-export default BackGroundImg;
+};
+
+export default Body_Home;

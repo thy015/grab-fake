@@ -6,13 +6,12 @@ import Detail from "./Detail";
 import { Routes, Route, Link } from "react-router-dom";
 import Footer from "./Footer";
 
-
 function Body_Home() {
 
   return (
     <>
    
-      <img src= "./images/mon-an.jpg"class="img" alt="..."></img>
+      <img src= "/images/mon-an.jpg"class="img" alt="..."></img>
       <div class="border-bottom">.</div>
       <div className="grabPage container-sm"></div>
       <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
@@ -23,7 +22,7 @@ function Body_Home() {
         <div className="containerCard">
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./images/food-1.png"
+              src="/images/food-1.png"
               className="card-img-top"
               alt="..."
             />
@@ -58,7 +57,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./images/food-2.png"
+              src="/images/food-2.png"
               className="card-img-top"
               alt="..."
             />
@@ -94,7 +93,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./images/food-3.png"
+              src="/images/food-3.png"
               className="card-img-top"
               alt="..."
             />
@@ -129,7 +128,7 @@ function Body_Home() {
           </div>
           <div className="card border-0" style={{ width: "280px" }}>
             <img
-              src="./images/food-4.png"
+              src="/images/food-4.png"
               className="card-img-top"
               alt="..."
             />
@@ -176,7 +175,7 @@ function Body_Home() {
                   <div>
                     <img
                       id="location"
-                      src="./images/location.png"
+                      src="/images/location.png"
                       alt="Location"
                     ></img>
                     <input

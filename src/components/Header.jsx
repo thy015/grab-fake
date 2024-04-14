@@ -33,7 +33,7 @@ function Header() {
         </Link>
         <div className="btn-group">
           <button type="button" class="btn btn-light ">
-            <img src="./images/shopping-bag.png" alt="bag" srcset="" />
+            <img src="/images/shopping-bag.png" alt="bag" srcset="" />
           </button>
           <button type="button" class="btn btn-light ">
             Đăng nhập/Đăng ký

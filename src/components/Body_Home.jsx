@@ -13,6 +13,8 @@ function BackGroundImg() {
       <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
       {/* Card holder */}
       <div className="container">
+        {/* nav */}
+        <Link to={"/Detail"} style={{ textDecoration:"none"}}>
         <div className="containerCard">
           <div className="card border-0" style={{ width: "280px" }}>
             <img
@@ -114,8 +116,7 @@ function BackGroundImg() {
                 <small className="text-body-secondary">
                   <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
                   <span className="card-text span-card">
-                    Trái tim anh, em select bằng mouse, chốn hẹn hò: Forum -
-                    Internet{" "}
+                  Lời nói đầu môi anh ơi trót lưỡi đầu môi{" "}
                   </span>{" "}
                 </small>
               </p>
@@ -150,8 +151,7 @@ function BackGroundImg() {
                 <small className="text-body-secondary">
                   <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
                   <span className="card-text span-card">
-                    Lời yêu thương truyền bằng phương thức Get, nhận dáng hình
-                    qua địa chỉ IP
+                  Phải xa đành thôi sao anh gian dối người ơi
                   </span>{" "}
                 </small>
               </p>
@@ -159,6 +159,7 @@ function BackGroundImg() {
           </div>
           
         </div>
+        </Link>
         {/* Seach box */}
         <div className="container">
           <div className="row">

@@ -377,6 +377,7 @@ img.add-button {
 .row.row-cols-1.row-cols-md-3.g-4 {
     margin-left: 10px;
 }
+/* footer */
 :where(.css-dev-only-do-not-override-1kuana8).ant-drawer .ant-drawer-body {
     flex: 1;
     min-width: 0;
@@ -390,4 +391,17 @@ img.add-button {
 }
 .ant-drawer-body {
     overflow: auto;
+}
+:where(.css-dev-only-do-not-override-1kuana8).ant-drawer .ant-drawer-footer {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-top: 1px solid rgba(5, 5, 5, 0.06);
+}
+.checkbox-option {
+    display: flex;
+    justify-content: space-between;
 }

@@ -496,7 +496,7 @@ function Compre() {
           </div>
           <div className="divider-detail" style={{ width: "100%" }}></div>
 
-          <div className="body-drawer" style={{ height: "100%" }}>
+          <div className="body-drawer" style={{ height: "95%" }}>
             {/* padding */}
             <div className="container-checkbox" style={{ padding: "24px" }}>
               {/* Checkbox */}
@@ -508,11 +508,9 @@ function Compre() {
                   .map((option) => (
                     <div key={option.value} className="checkbox-option">
                       <Checkbox value={option.value}>
-                        <div className="inputContent">
-                          <span className="label">{option.label}</span>
-                          <span className="price">{option.price} đ</span>
-                        </div>
+                      <span className="label">{option.label}</span>
                       </Checkbox>
+                          <span className="price">{option.price} đ</span>
                     </div>
                   ))}
               </div>
@@ -546,9 +544,9 @@ function Compre() {
                       <Checkbox value={option.value}>
                         <div className="inputContent">
                           <span className="label">{option.label}</span>
-                          <span className="price">{option.price}đ</span>
                         </div>
                       </Checkbox>
+                      <span className="price">{option.price}đ</span>
                     </div>
                   ))}
               </div>

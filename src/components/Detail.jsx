@@ -242,8 +242,7 @@ function Detail() {
                     <small className="text-body-secondary">
                       <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
                       <span className="card-text span-card">
-                        Lời yêu thương truyền bằng phương thức Get, nhận dáng
-                        hình qua địa chỉ IP
+                      Vì sao tình tôi chân thành bên anh đã lâu
                       </span>{" "}
                     </small>
                   </p>
@@ -424,8 +423,7 @@ function Detail() {
                     <small className="text-body-secondary">
                       <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
                       <span className="card-text span-card">
-                        Trái tim anh, em select bằng mouse, chốn hẹn hò: Forum -
-                        Internet{" "}
+                      Vì sao anh tôi không hiểu vì sao…{" "}
                       </span>{" "}
                     </small>
                   </p>

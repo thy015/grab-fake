@@ -404,7 +404,6 @@ function Body_Home() {
       ></WhatsGrabFood>
       </div>
       <FluidButton buttonText={"Read more"}></FluidButton>
-      <Footer></Footer>
     </>
   );
 };

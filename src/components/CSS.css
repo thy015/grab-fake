@@ -6,22 +6,7 @@ body,html{
     padding: 0;
 }
 /* header */
-.container-header{
-    height: 70px;
-    background-color:transparent;
-    display: flex;
-    align-items: center;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 5;
-}
-.container-header.container-sm{
-    padding: 40px;
-}
-.container-header.active{
-    background-color: white;
-}
+
 .grab-logo{
     height: 60px;
     margin-left: 24px;
@@ -34,7 +19,14 @@ body,html{
     margin-left: auto;
     margin-right: 23px;
 }
+/* home */
 /* fluid img */
+@media (max-width: 765px) {
+    .md\:col-span-2 {
+      display: none;
+    }
+  }
+
 .img{
    width: 100%;
    height: 380px;

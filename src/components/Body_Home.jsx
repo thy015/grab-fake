@@ -14,7 +14,11 @@ function Body_Home() {
 
   return (
     <>
-   
+       {/* <div class="grid md:grid-cols-12 h-64">
+       <div class="min-h-[0px] md:col-span-2 bg-black" ></div>
+       <div className="md:col-span-8"></div>
+       <div class="min-h-[0px] md:col-span-2 bg-black" ></div>
+       </div> */}
       <img src= {backgroundimg}class="img" alt="..."></img>
       <div class="border-bottom">.</div>
       <div className="grabPage container-sm"></div>

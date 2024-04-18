@@ -7,7 +7,7 @@ function Header() {
   //change nav color when scrolling
   const [color, setColor] = useState(false);
   const changeBackGround = () => {
-    if (window.scrollY >= 70) {
+    if (window.scrollY >= 64) {
       setColor(true);
     } else {
       setColor(false);
@@ -16,14 +16,19 @@ function Header() {
   window.addEventListener("scroll", changeBackGround);
 
   return (
+      
+       <div >
     <div
       className={
         color
-          ? "shadow p-3 mb-5 rounded container-header active"
-          : "container-header"
+          ? "flex justify-center items-center z-10 h-16 bg-white left-0 right-0 fixed active"
+          : "flex justify-center items-center z-10 h-16 bg-transparent left-0 right-0 fixed"
       }
     >
-      <div className="container-sm d-flex justify-content-between align-items-center">
+
+      <div className="container-md flex justify-content-center 
+      items-center z-10 h-16 bg-transparent left-0 right-0 fixed">
+        {/* h16 64px */}
         <Link to="/">
           <img
             className="grab-logo"
@@ -59,7 +64,9 @@ function Header() {
             </ul>
           </button>
         </div>
-      </div>
+        </div>
+   
+   </div>
     </div>
   );
 }

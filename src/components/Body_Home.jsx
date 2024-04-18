@@ -2,7 +2,6 @@ import "./CSS.css";
 import Words from "./Words";
 import WhatsGrabFood from "./WhatsGrabFood";
 import FluidButton from "./FluidButton";
-import Detail from "./Detail";
 import { Routes, Route, Link } from "react-router-dom";
 import Footer from "./Footer";
 import food1 from "../images/food-1.png"
@@ -404,6 +403,7 @@ function Body_Home() {
       ></WhatsGrabFood>
       </div>
       <FluidButton buttonText={"Read more"}></FluidButton>
+
     </>
   );
 };

@@ -21,8 +21,8 @@ function Header() {
     <div
       className={
         color
-          ? "flex justify-center items-center z-10 h-16 bg-white left-0 right-0 fixed active"
-          : "flex justify-center items-center z-10 h-16 bg-transparent left-0 right-0 fixed"
+          ? "header-active flex justify-center items-center z-10 h-20 bg-white left-0 right-0 shadow p-3 mb-5 fixed"
+          : "header-nonactive flex justify-center items-center z-10 h-20 bg-transparent left-0 right-0 fixed"
       }
     >
 
@@ -31,13 +31,13 @@ function Header() {
         {/* h16 64px */}
         <Link to="/">
           <img
-            className="grab-logo"
+            className="grab-logo max-w-[170px]"
             src="https://food.grab.com/static/images/logo-grabfood2.svg"
             alt="grab-logo"
           />
         </Link>
         <div className="btn-group">
-          <button type="button" class="btn btn-light ">
+          <button type="button" class="btn btn-light shopping-bag">
             <img src={shop} alt="bag" srcset="" />
           </button>
           <button type="button" class="btn btn-light ">

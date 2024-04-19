@@ -6,7 +6,22 @@ body,html{
     padding: 0;
 }
 /* header */
-
+@media (max-width:451px) {
+    .grab-logo{
+        width: 120px;
+    }
+}
+@media (max-width: 536px) {
+    button.btn.btn-light.shopping-bag {
+        display: none;
+    }
+    button.btn.btn-light {
+        font-size: 15px;
+    }
+    .header-active{   
+        height: 130px;
+    }
+  }
 .grab-logo{
     height: 60px;
     margin-left: 24px;
@@ -21,11 +36,6 @@ body,html{
 }
 /* home */
 /* fluid img */
-@media (max-width: 765px) {
-    .md\:col-span-2 {
-      display: none;
-    }
-  }
 
 .img{
    width: 100%;

@@ -26,26 +26,26 @@ function Header() {
       }
     >
 
-      <div className="container-md flex justify-content-center 
+      <div className="container-md flex justify-center
       items-center z-10 h-16 bg-transparent left-0 right-0 fixed">
         {/* h16 64px */}
         <Link to="/">
           <img
-            className="grab-logo max-w-[170px]"
+            className="grab-logo max-w-[170px] h-16 ml-10"
             src="https://food.grab.com/static/images/logo-grabfood2.svg"
             alt="grab-logo"
           />
         </Link>
-        <div className="btn-group">
-          <button type="button" class="btn btn-light shopping-bag">
+        <div className="btn-group ml-auto mr-6">
+          <button type="button" class="btn btn-light ml-2 mr-2  shopping-bag">
             <img src={shop} alt="bag" srcset="" />
           </button>
-          <button type="button" class="btn btn-light ">
+          <button type="button" class="btn btn-light ml-2 mr-2 ">
             Đăng nhập/Đăng ký
           </button>
           <button
             type="button"
-            class="btn btn-light dropdown-toggle"
+            class="btn btn-light ml-2 mr-2 dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >

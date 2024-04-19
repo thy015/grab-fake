@@ -3,7 +3,6 @@ import Words from "./Words";
 import WhatsGrabFood from "./WhatsGrabFood";
 import FluidButton from "./FluidButton";
 import { Routes, Route, Link } from "react-router-dom";
-import Footer from "./Footer";
 import food1 from "../images/food-1.png";
 import food2 from "../images/food-2.png";
 import food3 from "../images/food-3.png";
@@ -13,9 +12,8 @@ import location from "../images/location.png";
 function Body_Home() {
   return (
     <>
-      <img src={backgroundimg} class="img" alt="..."></img>
-      <div class="border-bottom">.</div>
-      <div className="grabPage container-sm"></div>
+      <img src={backgroundimg} class="fluid-img w-full h-96 object-cover z-[-1]" alt="..."></img>
+      <div class="border-bottom mb-44 h-20">.</div>
       <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
       {/* Card holder */}
       <div className="container">
@@ -150,9 +148,8 @@ function Body_Home() {
           </div>
         </Link>
         {/* Seach box */}
-        <div className="container">
-          <div className="row">
-            <div className="col-md-1" style={{ marginLeft: "30px" }}>
+    
+            <div className="ml-12">
               <div className="container-search-box shadow-sm p-3 mb-5 rounded">
                 <div className="wrap-input">
                   <h5 id="af">Good Afternoon</h5>
@@ -178,8 +175,7 @@ function Body_Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+       
 
         {/* Nav button */}
         <div className="container-sm container-button">

@@ -1,5 +1,4 @@
 import "./CSS.css";
-import Words from "./Words";
 import { Link } from "react-router-dom";
 import search from "../images/search.png"
 import food1 from "../images/food-1.png"
@@ -141,7 +140,10 @@ function Detail() {
             </ol>
           </nav>
         </div>
-        <Words words="Ưu đãi ở " inputplace="InputPlace"></Words>
+        <div className="container-sm">
+      <h1 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            Ưu đãi ở <span className="inputPlace text-Ggreen">InputPlace</span></h1>
+      </div>
         <div className="container">
           <Link to={"/Compre"} style={{ textDecoration: "none" }}>
             <div className="containerCard">

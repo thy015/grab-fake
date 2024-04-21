@@ -1,5 +1,4 @@
 import "./CSS.css";
-import Words from "./Words";
 import WhatsGrabFood from "./WhatsGrabFood";
 import FluidButton from "./FluidButton";
 import { Routes, Route, Link } from "react-router-dom";
@@ -13,8 +12,12 @@ function Body_Home() {
   return (
     <>
       <img src={backgroundimg} class="fluid-img w-full h-96 object-cover z-[-1]" alt="..."></img>
-      <div class="border-bottom mb-44 h-20">.</div>
-      <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
+      <div class="border-bottom h-20">.</div>
+      {/* words */}
+      <div className="container-sm">
+      <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            Ưu đãi GrabFood tại <span className="inputPlace text-Ggreen">InputPlace</span></h2>
+      </div>
       {/* Card holder */}
       <div className="container">
         {/* nav */}
@@ -149,26 +152,26 @@ function Body_Home() {
         </Link>
         {/* Seach box */}
     
-            <div className="ml-12">
-              <div className="container-search-box shadow-sm p-3 mb-5 rounded">
-                <div className="wrap-input">
-                  <h5 id="af">Good Afternoon</h5>
-                  <h1 id="where">Where should we deliver your food today?</h1>
-                  <div>
-                    <img id="location" src={location} alt="Location"></img>
+            <div className="ml-12 search-box">
+              <div className="container-search-box shadow-sm p-3 mb-5 rounded w-[350px] h-96 z-3 absolute top-[16%] bg-white">
+                <div className="wrap-input pt-6 pl-4">
+                  <h5 className="font-bold">Good Afternoon</h5>
+                  <h1 className="font-[650]">Where should we deliver your food today?</h1>
+                  <div className="flex items-center relative  mt-3 mb-3">
+                    <img className="absolute left-0 ml-2" src={location} alt="Location"></img>
                     <input
-                      id="search-input"
+                      className="search-input w-72 pt-2 pl-10 pb-2 border"
                       placeholder="Nhập địa chỉ của bạn"
                       type="text"
                     ></input>
                     <img
-                      id="des"
+                      className="absolute right-0 mr-4"
                       src="https://food.grab.com/static/images/icons/icon-geo-button.svg"
                       alt="Geo Button"
                     ></img>
                   </div>
                   <div>
-                    <button type="button" className="btn btn-search">
+                    <button type="button" className="btn-search bg-Ggreen w-72 h-12 font-[650] text-white rounded-md hover:bg-green-700">
                       Tìm kiếm
                     </button>
                   </div>
@@ -185,8 +188,11 @@ function Body_Home() {
             </button>
           </Link>
         </div>
-
-        <Words words="There's something for everyone!"></Words>
+{/* Words */}
+        <div className="container-sm">
+      <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            There's something for everyone! </h2>
+      </div>
         {/* Food Category */}
         <div className="container">
           <Link to={"/Detail"} style={{ textDecoration: "none" }}>
@@ -315,7 +321,10 @@ function Body_Home() {
           </Link>
         </div>
         {/* Why */}
-        <Words words="Vì sao bạn nên Order trên GrabFood?"></Words>
+        <div className="container-sm">
+      <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+           Vì sao bạn nên Order trên GrabFood? </h2>
+      </div>
         <div className="container-sm">
           <ul className="list-unstyled">
             <li className="li-check">
@@ -369,7 +378,10 @@ function Body_Home() {
           </ul>
         </div>
         {/* What is grab food */}
-        <Words words="Những câu hỏi thường gặp"></Words>
+        <div className="container-sm">
+      <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            Những câu hỏi thường gặp </h2>
+      </div>
         <WhatsGrabFood
           title="GrabFood là gì?"
           describe="Lunch, Bún Cá Chấm Gốc Đa - Vũ Thạnh for Dinner! We are here to satisfy your hunger with a wide selection of merchant partners in Vietnam. GrabFood là dịch vụ Giao đồ ăn nhanh nhất tại Việt Nam. Chúng tôi đã sắp xếp tất cả các món ăn, nhà hàng và thực phẩm yêu thích của bạn một cách hợp lý để giúp bạn tìm được đồ ăn dễ dàng và nhanh chóng nhất có thể. Tìm và đặt món ăn yêu thích trên khắp Việt Nam - đặt đồ ăn trực tuyến chỉ bằng vài thao tác, từ món Lifted Coffee & Brunch cho bữa sáng, đến Maazi Indian – Nhà Hàng Ấn Độ cho bữa trưa, đến Bún Cá Chấm Gốc Đa – Vũ Thạnh cho bữa tối! Hãy để chúng tôi xua tan cơn đói của bạn nhờ một loạt đối tác bán đồ ăn ở Việt Nam."

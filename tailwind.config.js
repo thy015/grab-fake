@@ -11,6 +11,9 @@ export default {
           DEFAULT: '#00B14F', 
         },
       },
+      screens:{
+        'md':{'max':'586px'}
+      },
     },
   },
   plugins: [],

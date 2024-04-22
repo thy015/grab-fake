@@ -8,12 +8,13 @@ import food3 from "../images/food-3.png";
 import food4 from "../images/food-4.png";
 import backgroundimg from "../images/mon-an.jpg";
 import location from "../images/location.png";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import 'swiper/css/bundle';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/bundle'
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 function Body_Home() {
-
 
   return (
     <>
@@ -26,7 +27,6 @@ function Body_Home() {
       {/* Card holder */}
       <div className="container container-card">
         {/* swiper */}
-
         {/* words */}
         <div className="container-sm">
           <h2 className="uu-dai mb-8 mt-32 relative text-3xl font-bold left-9">
@@ -35,9 +35,20 @@ function Body_Home() {
           </h2>
         </div>
         {/* nav */}
+        <Swiper 
+      className="mt-24 max-w-[1200px]"
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={4}
+      // navigation='true'
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
 
-        <Link to={"/Detail"} style={{ textDecoration: "none" }}>
+    >  
+  
           <div className="wrap-card flex justify-around flex-wrap ml-8 ">
+          <SwiperSlide>
+          <Link to={"/Detail"} style={{ textDecoration: "none" }}>
             <div className="card border-0 w-72 ">
               <img src={food1} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -65,6 +76,10 @@ function Body_Home() {
                 </div>
               </div>
             </div>
+            </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+            <Link to={"/Detail"} style={{ textDecoration: "none" }}>
             <div className="card border-0 w-72">
               <img src={food2} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -93,6 +108,10 @@ function Body_Home() {
                 </div>
               </div>
             </div>
+            </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+            <Link to={"/Detail"} style={{ textDecoration: "none" }}>
             <div className="card border-0 w-72">
               <img src={food3} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -120,6 +139,10 @@ function Body_Home() {
                 </div>
               </div>
             </div>
+            </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+            <Link to={"/Detail"} style={{ textDecoration: "none" }}>
             <div className="card border-0 w-72">
               <img src={food4} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -147,8 +170,106 @@ function Body_Home() {
                 </div>
               </div>
             </div>
-          </div>    
-        </Link>
+            </Link>
+          </SwiperSlide> 
+          <SwiperSlide>
+          <Link to={"/Detail"} style={{ textDecoration: "none" }}>
+            <div className="card border-0 w-72 ">
+              <img src={food1} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">McDonald's - Hồ Gươm</h5>
+                <p className="card-text">Gà Rán - Burger, Món Quốc Tế</p>
+                <div className="flex items-center">
+                  <img
+                    className="w-6 mr-2"
+                    src="	https://food.grab.com/static/images/icons/icon-star.svg"
+                  ></img>
+                  <span className="mr-4">4.3</span>
+                  <img
+                    className="mr-2"
+                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
+                  />
+                  <span className="mr-2">30 phút</span>
+                  <span className="mr-2">•</span>
+                  <span className="">2km</span>
+                </div>
+                <div className="flex items-start mt-[10px]">
+                  <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
+                  <p className="ml-2">
+                    50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+            </Link>
+            </SwiperSlide> 
+            <SwiperSlide>
+            <Link to={"/Detail"} style={{ textDecoration: "none" }}>
+            <div className="card border-0 w-72">
+              <img src={food2} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Cơm Niêu Singapore</h5>
+                <p className="card-text">Cơm</p>
+                <div className="flex items-center">
+                  <img
+                    className="w-6 mr-2"
+                    src="	https://food.grab.com/static/images/icons/icon-star.svg"
+                  ></img>
+                  <span className="mr-4">4.3</span>
+                  <img
+                    className="mr-2"
+                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
+                  />
+                  <span className="mr-2">30 phút</span>
+                  <span className="mr-2">•</span>
+                  <span className="">2km</span>
+                </div>
+                <div className="flex items-start mt-[10px]">
+                  <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
+                  <p className="ml-2">
+                    Tặng ngay Trà Tắc Xí Muội 700ML khi đặt đơn tối thiểu
+                    150.000₫
+                  </p>
+                </div>
+              </div>
+            </div>
+            </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+            <Link to={"/Detail"} style={{ textDecoration: "none" }}>
+            <div className="card border-0 w-72">
+              <img src={food2} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Cơm Niêu Singapore</h5>
+                <p className="card-text">Cơm</p>
+                <div className="flex items-center">
+                  <img
+                    className="w-6 mr-2"
+                    src="	https://food.grab.com/static/images/icons/icon-star.svg"
+                  ></img>
+                  <span className="mr-4">4.3</span>
+                  <img
+                    className="mr-2"
+                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
+                  />
+                  <span className="mr-2">30 phút</span>
+                  <span className="mr-2">•</span>
+                  <span className="">2km</span>
+                </div>
+                <div className="flex items-start mt-[10px]">
+                  <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
+                  <p className="ml-2">
+                    Tặng ngay Trà Tắc Xí Muội 700ML khi đặt đơn tối thiểu
+                    150.000₫
+                  </p>
+                </div>
+              </div>
+            </div>
+            </Link>
+            </SwiperSlide>
+            
+          </div>  
+        </Swiper>
          {/* button */}
 
         {/* Seach box */}

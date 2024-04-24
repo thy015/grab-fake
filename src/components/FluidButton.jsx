@@ -10,7 +10,7 @@ function FluidButton({ buttonText }) {
 
   return (
     <div className="container-max">
-      <div className="container-sm container-button">
+      <div className="container-sm">
         {show && (
           <>
             <WhatsGrabFood
@@ -69,7 +69,7 @@ function FluidButton({ buttonText }) {
         )}
         <button
           type="button"
-          class="btn btn-fluid btn-readmore"
+          class="btn w-[94%] h-12 mt-[24px] ml-12 mb-8 font-bold border-[#747373] border "
           onClick={handleClick}
         >
           {buttonText}

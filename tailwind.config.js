@@ -12,7 +12,9 @@ export default {
         },
       },
       screens:{
-        'md':{'max':'586px'}
+        'mobile':{'max':'480px'},
+        'small':{'max':'600px'},
+        'medium':{'max':'1133px'}
       },
     },
   },

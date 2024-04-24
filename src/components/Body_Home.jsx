@@ -8,62 +8,61 @@ import food3 from "../images/food-3.png";
 import food4 from "../images/food-4.png";
 import backgroundimg from "../images/mon-an.jpg";
 import location from "../images/location.png";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/bundle'
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { useRef } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { useRef } from "react";
 function Body_Home() {
   // slider
   const sliderRef = useRef();
   //data
-const cardData=[
-  {
-    val:'0',
-    img:'/images/food-1.png',
-    cardTitle:'McDonalds - Hồ Gươm',
-    cardText:'Gà Rán - Burger, Món Quốc Tế',
-    star:'4.5',
-    min:'30',
-    dist:'2km',
-    describe:'50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì'
-  },
-  {
-    val:'1',
-    img:'/images/food-2.png',
-    cardTitle:'Cơm Niêu Singapore',
-    cardText:'Cơm',
-    star:'4.3',
-    min:'25',
-    dist:'1,4km',
-    describe:'Tặng ngay Trà Tắc Xí Muội 700ML khi đặt đơn tối thiểu 150.000₫'
-  },
-  {
-    val:'2',
-    img:'/images/food-4.png',
-    cardTitle:'CƠM THỐ BÁCH KHOA',
-    cardText:'Cơm chay - Healthy - Đồ chay',
-    star:'4.2',
-    min:'28',
-    dist:'2,4km',
-    describe:'Lời nói đầu môi anh ơi trót lưỡi đầu môi'
-  },
-  {
-    val:'3',
-    img:'/images/food-3.png',
-    cardTitle:'Bánh Mì Cô Chun',
-    cardText:'Bánh mì - xôi',
-    star:'4.7',
-    min:'20',
-    dist:'1km',
-    describe:'Phải xa đành thôi sao anh gian dối người ơi'
-  },
-]
+  const cardData = [
+    {
+      val: "0",
+      img: "/images/food-1.png",
+      cardTitle: "McDonalds - Hồ Gươm",
+      cardText: "Gà Rán - Burger, Món Quốc Tế",
+      star: "4.5",
+      min: "30",
+      dist: "2km",
+      describe: "50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì",
+    },
+    {
+      val: "1",
+      img: "/images/food-2.png",
+      cardTitle: "Cơm Niêu Singapore",
+      cardText: "Cơm",
+      star: "4.3",
+      min: "25",
+      dist: "1,4km",
+      describe:
+        "Tặng ngay Trà Tắc Xí Muội 700ML khi đặt đơn tối thiểu 150.000₫",
+    },
+    {
+      val: "2",
+      img: "/images/food-4.png",
+      cardTitle: "CƠM THỐ BÁCH KHOA",
+      cardText: "Cơm chay - Healthy - Đồ chay",
+      star: "4.2",
+      min: "28",
+      dist: "2,4km",
+      describe: "Lời nói đầu môi anh ơi trót lưỡi đầu môi",
+    },
+    {
+      val: "3",
+      img: "/images/food-3.png",
+      cardTitle: "Bánh Mì Cô Chun",
+      cardText: "Bánh mì - xôi",
+      star: "4.7",
+      min: "20",
+      dist: "1km",
+      describe: "Phải xa đành thôi sao anh gian dối người ơi",
+    },
+  ];
   return (
-
-
     <>
       <img
         src={backgroundimg}
@@ -71,76 +70,99 @@ const cardData=[
         alt="..."
       ></img>
       <div class="border-bottom h-20">.</div>
-      
+
       <div className="container container-card">
         {/* swiper */}
         {/* words */}
         <div className="container-sm">
-          <h2 className="uu-dai mb-8 mt-32 relative text-3xl font-bold left-9">
+          <h2 className="uu-dai mb-8 mt-40 relative text-3xl font-bold left-9">
             Ưu đãi GrabFood tại{" "}
             <span className="inputPlace text-Ggreen">InputPlace</span>
           </h2>
         </div>
-        </div>
-        <div className="swiper w-full ">
+      </div>
+      <div className="swiper w-full medium:w-3/4">
         {/* nav */}
-        <Swiper 
-      className="w-3/4"
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={4}
-      onSwiper={it => (sliderRef.current = it)}
-      onSlideChange={() => console.log('slide change')}
-      
-    > 
-   <div className="arrow-swiper flex w-full justify-between  z-[5] top-[37%] absolute ">
-        <img className="" src="/images/arrow-prev.png"  onClick={() => sliderRef.current?.slidePrev()}></img> 
-    <img src="/images/arrow-next.png"  onClick={() => sliderRef.current?.slideNext()}></img> </div>
+        <Swiper
+          className="w-full xl:max-w-[1200px]"
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={4}
+          onSwiper={(it) => (sliderRef.current = it)}
+          onSlideChange={() => console.log("slide change")}
+          breakpoints={{
+            100: {
+              slidesPerView: 1,
+            },
+            500: {
+              slidesPerView: 2,
+            },
+            750: {
+              slidesPerView: 3,
+            },
+            1133: {
+              slidesPerView: 4,
+            },
+          }}
+        >
+          <div className="arrow-swiper flex w-full justify-between  z-[5] top-[37%] absolute ">
+            <img
+              className=""
+              src="/images/arrow-prev.png"
+              onClick={() => sliderRef.current?.slidePrev()}
+            ></img>
+            <img
+              src="/images/arrow-next.png"
+              onClick={() => sliderRef.current?.slideNext()}
+            ></img>{" "}
+          </div>
 
-  {/* Data */}
+          {/* Data */}
           <div className="wrap-card flex justify-around flex-wrap ml-8 ">
             {/*    {cardData.map((card)=>( */}
-          {cardData.flatMap((card) => [card, card]).map((card, index) => (
-          <SwiperSlide key={index}>
-          <Link to={"/Detail"} style={{ textDecoration: "none" }}>
-            <div className="card border-0 w-72 ">
-
-             
-              <img src={card.img} className="card-img-top w-full h-36" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{card.cardTitle}</h5>
-                <p className="card-text">{card.cardText}</p>
-                <div className="flex items-center">
-                  <img
-                    className="w-6 mr-2"
-                    src="	https://food.grab.com/static/images/icons/icon-star.svg"
-                  ></img>
-                  <span className="mr-4 star">{card.star}</span>
-                  <img
-                    className="mr-2"
-                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
-                  />
-                  <span className="mr-2 min">{card.min}</span>
-                  <span className="mr-2">•</span>
-                  <span className="dist">{card.dist}</span>
-                </div>
-                <div className="flex items-start mt-[10px]">
-                  <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
-                  <p className="ml-2">
-                   {card.describe}
-                  </p>
-                </div>
-              </div>
-            </div>
-            </Link>
-            </SwiperSlide>
-             ))}
-          </div>  
+            {cardData
+              .flatMap((card) => [card, card])
+              .map((card, index) => (
+                <SwiperSlide key={index}>
+                  <Link to={"/Detail"} style={{ textDecoration: "none" }}>
+                    <div className="card border-0 w-72 medium:w-60 small:w-36 small:h-56 ">
+                      <img
+                        src={card.img}
+                        className="card-img-top w-full h-36 "
+                        alt="..."
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{card.cardTitle}</h5>
+                        <p className="card-text">{card.cardText}</p>
+                        <div className="flex items-center">
+                          <img
+                            className="w-6 mr-2"
+                            src="	https://food.grab.com/static/images/icons/icon-star.svg"
+                          ></img>
+                          <span className="mr-4 star">{card.star}</span>
+                          <img
+                            className="mr-2"
+                            src="https://food.grab.com/static/images/icons/icon-clock.svg"
+                          />
+                          <span className="mr-2 min">{card.min}</span>
+                          <span className="mr-2">•</span>
+                          <span className="dist">{card.dist}</span>
+                        </div>
+                        <div className="flex items-start mt-[10px]">
+                          <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
+                          <p className="ml-2">{card.describe}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              ))}
+          </div>
         </Swiper>
-        </div>
-         {/* button */}
-        {/* Seach box */}
-        <div className="container container-card">
+      </div>
+      {/* button */}
+      {/* Seach box */}
+      <div className="container container-card">
         <div className="ml-12 search-box">
           <div className="container-search-box shadow-sm p-3 mb-5 rounded w-[350px] h-96 z-3 absolute top-[16%] bg-white">
             <div className="wrap-input pt-6 pl-4">
@@ -389,7 +411,6 @@ const cardData=[
       <FluidButton buttonText={"Read more"}></FluidButton>
     </>
   );
-  
 }
 
 export default Body_Home;

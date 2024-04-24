@@ -43,16 +43,18 @@ body,html{
     .btn-search{
         width: 100%;
     }
-    .container-card{
-        margin-top: 300px;
-    }
+ 
     .uu-dai{
         margin-top: 350px;
         left: 0;
         font-size: 25px;
     }
+
   }
   @media (max-width:767px) {
+
+  }
+  @media (max-width:1150px) {
 
   }
 
@@ -70,10 +72,6 @@ body,html{
     width: 95.5%;
     margin: 98px 0px 30px 30px;
     height: 48px;
-}
-.container-button{
-    max-width: 1250px;
-    margin-top: -50px;
 }
 .card:hover{
     cursor: pointer;

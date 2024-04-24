@@ -6,6 +6,8 @@ import food1 from "../images/food-1.png";
 import food2 from "../images/food-2.png";
 import food3 from "../images/food-3.png";
 import food4 from "../images/food-4.png";
+import arrowNext from "../images/arrow-next.png";
+import arrowPrev from "../images/arrow-prev.png";
 import backgroundimg from "../images/mon-an.jpg";
 import location from "../images/location.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +24,7 @@ function Body_Home() {
   const cardData = [
     {
       val: "0",
-      img: "/images/food-1.png",
+      img: food1,
       cardTitle: "McDonalds - Hồ Gươm",
       cardText: "Gà Rán - Burger, Món Quốc Tế",
       star: "4.5",
@@ -32,7 +34,7 @@ function Body_Home() {
     },
     {
       val: "1",
-      img: "/images/food-2.png",
+      img: food2,
       cardTitle: "Cơm Niêu Singapore",
       cardText: "Cơm",
       star: "4.3",
@@ -43,7 +45,7 @@ function Body_Home() {
     },
     {
       val: "2",
-      img: "/images/food-4.png",
+      img: food3,
       cardTitle: "CƠM THỐ BÁCH KHOA",
       cardText: "Cơm chay - Healthy - Đồ chay",
       star: "4.2",
@@ -53,7 +55,7 @@ function Body_Home() {
     },
     {
       val: "3",
-      img: "/images/food-3.png",
+      img: food4,
       cardTitle: "Bánh Mì Cô Chun",
       cardText: "Bánh mì - xôi",
       star: "4.7",
@@ -108,11 +110,11 @@ function Body_Home() {
           <div className="arrow-swiper flex w-full justify-between  z-[5] top-[37%] absolute ">
             <img
               className=""
-              src="/images/arrow-prev.png"
+              src={arrowPrev}
               onClick={() => sliderRef.current?.slidePrev()}
             ></img>
             <img
-              src="/images/arrow-next.png"
+              src={arrowNext}
               onClick={() => sliderRef.current?.slideNext()}
             ></img>{" "}
           </div>

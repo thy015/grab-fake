@@ -1,5 +1,4 @@
 import "./CSS.css";
-import Words from "./Words";
 import WhatsGrabFood from "./WhatsGrabFood";
 import FluidButton from "./FluidButton";
 import { Routes, Route, Link } from "react-router-dom";
@@ -7,176 +6,200 @@ import food1 from "../images/food-1.png";
 import food2 from "../images/food-2.png";
 import food3 from "../images/food-3.png";
 import food4 from "../images/food-4.png";
+import arrowNext from "../images/arrow-next.png";
+import arrowPrev from "../images/arrow-prev.png";
 import backgroundimg from "../images/mon-an.jpg";
 import location from "../images/location.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { useRef } from "react";
 function Body_Home() {
+  // slider
+  const sliderRef = useRef();
+  //data
+  const cardData = [
+    {
+      val: "0",
+      img: food1,
+      cardTitle: "McDonalds - Hồ Gươm",
+      cardText: "Gà Rán - Burger, Món Quốc Tế",
+      star: "4.5",
+      min: "30",
+      dist: "2km",
+      describe: "50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì",
+    },
+    {
+      val: "1",
+      img: food2,
+      cardTitle: "Cơm Niêu Singapore",
+      cardText: "Cơm",
+      star: "4.3",
+      min: "25",
+      dist: "1,4km",
+      describe:
+        "Tặng ngay Trà Tắc Xí Muội 700ML khi đặt đơn tối thiểu 150.000₫",
+    },
+    {
+      val: "2",
+      img: food3,
+      cardTitle: "CƠM THỐ BÁCH KHOA",
+      cardText: "Cơm chay - Healthy - Đồ chay",
+      star: "4.2",
+      min: "28",
+      dist: "2,4km",
+      describe: "Lời nói đầu môi anh ơi trót lưỡi đầu môi",
+    },
+    {
+      val: "3",
+      img: food4,
+      cardTitle: "Bánh Mì Cô Chun",
+      cardText: "Bánh mì - xôi",
+      star: "4.7",
+      min: "20",
+      dist: "1km",
+      describe: "Phải xa đành thôi sao anh gian dối người ơi",
+    },
+  ];
   return (
     <>
-      <img src={backgroundimg} class="fluid-img w-full h-96 object-cover z-[-1]" alt="..."></img>
-      <div class="border-bottom mb-44 h-20">.</div>
-      <Words words="Ưu đãi GrabFood tại " inputplace="InputPlace"></Words>
-      {/* Card holder */}
-      <div className="container">
+      <img
+        src={backgroundimg}
+        class="fluid-img w-full h-96 object-cover z-[-1]"
+        alt="..."
+      ></img>
+      <div class="border-bottom h-20">.</div>
+
+      <div className="container container-card">
+        {/* swiper */}
+        {/* words */}
+        <div className="container-sm">
+          <h2 className="uu-dai mb-8 mt-40 relative text-3xl font-bold left-9">
+            Ưu đãi GrabFood tại{" "}
+            <span className="inputPlace text-Ggreen">InputPlace</span>
+          </h2>
+        </div>
+      </div>
+      <div className="swiper w-full medium:w-3/4">
         {/* nav */}
-        <Link to={"/Detail"} style={{ textDecoration: "none" }}>
-          <div className="containerCard">
-            <div className="card border-0" style={{ width: "280px" }}>
-              <img src={food1} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">McDonald's - Hồ Gươm</h5>
-                <p className="card-text">Gà Rán - Burger, Món Quốc Tế</p>
+        <Swiper
+          className="w-full xl:max-w-[1200px]"
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={4}
+          onSwiper={(it) => (sliderRef.current = it)}
+          onSlideChange={() => console.log("slide change")}
+          breakpoints={{
+            100: {
+              slidesPerView: 1,
+            },
+            500: {
+              slidesPerView: 2,
+            },
+            750: {
+              slidesPerView: 3,
+            },
+            1133: {
+              slidesPerView: 4,
+            },
+          }}
+        >
+          <div className="arrow-swiper flex w-full justify-between  z-[5] top-[37%] absolute ">
+            <img
+              className=""
+              src={arrowPrev}
+              onClick={() => sliderRef.current?.slidePrev()}
+            ></img>
+            <img
+              src={arrowNext}
+              onClick={() => sliderRef.current?.slideNext()}
+            ></img>{" "}
+          </div>
 
+          {/* Data */}
+          <div className="wrap-card flex justify-around flex-wrap ml-8 ">
+            {/*    {cardData.map((card)=>( */}
+            {cardData
+              .flatMap((card) => [card, card])
+              .map((card, index) => (
+                <SwiperSlide key={index}>
+                  <Link to={"/Detail"} style={{ textDecoration: "none" }}>
+                    <div className="card border-0 w-72 medium:w-60 small:w-36 small:h-56 ">
+                      <img
+                        src={card.img}
+                        className="card-img-top w-full h-36 "
+                        alt="..."
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{card.cardTitle}</h5>
+                        <p className="card-text">{card.cardText}</p>
+                        <div className="flex items-center">
+                          <img
+                            className="w-6 mr-2"
+                            src="	https://food.grab.com/static/images/icons/icon-star.svg"
+                          ></img>
+                          <span className="mr-4 star">{card.star}</span>
+                          <img
+                            className="mr-2"
+                            src="https://food.grab.com/static/images/icons/icon-clock.svg"
+                          />
+                          <span className="mr-2 min">{card.min}</span>
+                          <span className="mr-2">•</span>
+                          <span className="dist">{card.dist}</span>
+                        </div>
+                        <div className="flex items-start mt-[10px]">
+                          <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
+                          <p className="ml-2">{card.describe}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              ))}
+          </div>
+        </Swiper>
+      </div>
+      {/* button */}
+      {/* Seach box */}
+      <div className="container container-card">
+        <div className="ml-12 search-box">
+          <div className="container-search-box shadow-sm p-3 mb-5 rounded w-[350px] h-96 z-3 absolute top-[16%] bg-white">
+            <div className="wrap-input pt-6 pl-4">
+              <h5 className="font-bold">Good Afternoon</h5>
+              <h1 className="font-[650]">
+                Where should we deliver your food today?
+              </h1>
+              <div className="flex items-center relative  mt-3 mb-3">
                 <img
-                  className="span-star"
-                  src="	https://food.grab.com/static/images/icons/icon-star.svg"
+                  className="absolute left-0 ml-2"
+                  src={location}
+                  alt="Location"
                 ></img>
-                <span className="card-text span-card">4.3</span>
-                <span className="card-text span-clock">
-                  <img
-                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span className="card-text span-card">30 phút</span>
-                  <span className="card-text span-clock">•</span>
-                  <span className="card-text span-card">2km</span>
-                </span>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
-                    <span className="card-text span-card">
-                      50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì{" "}
-                    </span>{" "}
-                  </small>
-                </p>
+                <input
+                  className="search-input w-72 pt-2 pl-10 pb-2 border"
+                  placeholder="Nhập địa chỉ của bạn"
+                  type="text"
+                ></input>
+                <img
+                  className="absolute right-0 mr-4"
+                  src="https://food.grab.com/static/images/icons/icon-geo-button.svg"
+                  alt="Geo Button"
+                ></img>
               </div>
-            </div>
-            <div className="card border-0" style={{ width: "280px" }}>
-              <img src={food2} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Cơm Niêu Singapore</h5>
-                <p className="card-text">Cơm</p>
-
-                <img
-                  className="span-star"
-                  src="	https://food.grab.com/static/images/icons/icon-star.svg"
-                ></img>
-                <span className="card-text span-card">4.6</span>
-                <span className="card-text span-clock">
-                  <img
-                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span className="card-text span-card">20 phút</span>
-                  <span className="card-text span-clock">•</span>
-                  <span className="card-text span-card">1,8km</span>
-                </span>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
-                    <span className="card-text span-card">
-                      Tặng ngay Trà Tắc Xí Muội 700ML khi đặt đơn tối thiểu
-                      150.000₫{" "}
-                    </span>{" "}
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div className="card border-0" style={{ width: "280px" }}>
-              <img src={food3} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">CƠM THỐ BÁCH KHOA</h5>
-                <p className="card-text">Cơm Chay - Salad Healthy - Đồ Chay</p>
-
-                <img
-                  className="span-star"
-                  src="	https://food.grab.com/static/images/icons/icon-star.svg"
-                ></img>
-                <span className="card-text span-card">4.5</span>
-                <span className="card-text span-clock">
-                  <img
-                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span className="card-text span-card">15 phút</span>
-                  <span className="card-text span-clock">•</span>
-                  <span className="card-text span-card">1km</span>
-                </span>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
-                    <span className="card-text span-card">
-                      Lời nói đầu môi anh ơi trót lưỡi đầu môi{" "}
-                    </span>{" "}
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div className="card border-0" style={{ width: "280px" }}>
-              <img src={food4} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Bánh Mì Cô Chun</h5>
-                <p className="card-text">Bánh Mì - Xôi</p>
-
-                <img
-                  className="span-star"
-                  src="	https://food.grab.com/static/images/icons/icon-star.svg"
-                ></img>
-                <span className="card-text span-card">3.9</span>
-                <span className="card-text span-clock">
-                  <img
-                    src="https://food.grab.com/static/images/icons/icon-clock.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span className="card-text span-card">35 phút</span>
-                  <span className="card-text span-clock">•</span>
-                  <span className="card-text span-card">2,4km</span>
-                </span>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
-                    <span className="card-text span-card">
-                      Phải xa đành thôi sao anh gian dối người ơi
-                    </span>{" "}
-                  </small>
-                </p>
+              <div>
+                <button
+                  type="button"
+                  className="btn-search bg-Ggreen w-72 h-12 font-[650] text-white rounded-md hover:bg-green-700"
+                >
+                  Tìm kiếm
+                </button>
               </div>
             </div>
           </div>
-        </Link>
-        {/* Seach box */}
-    
-            <div className="ml-12">
-              <div className="container-search-box shadow-sm p-3 mb-5 rounded">
-                <div className="wrap-input">
-                  <h5 id="af">Good Afternoon</h5>
-                  <h1 id="where">Where should we deliver your food today?</h1>
-                  <div>
-                    <img id="location" src={location} alt="Location"></img>
-                    <input
-                      id="search-input"
-                      placeholder="Nhập địa chỉ của bạn"
-                      type="text"
-                    ></input>
-                    <img
-                      id="des"
-                      src="https://food.grab.com/static/images/icons/icon-geo-button.svg"
-                      alt="Geo Button"
-                    ></img>
-                  </div>
-                  <div>
-                    <button type="button" className="btn btn-search">
-                      Tìm kiếm
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-       
-
+        </div>
         {/* Nav button */}
         <div className="container-sm container-button">
           <Link to={"/Detail"}>
@@ -185,8 +208,12 @@ function Body_Home() {
             </button>
           </Link>
         </div>
-
-        <Words words="There's something for everyone!"></Words>
+        {/* Words */}
+        <div className="container-sm">
+          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            There's something for everyone!{" "}
+          </h2>
+        </div>
         {/* Food Category */}
         <div className="container">
           <Link to={"/Detail"} style={{ textDecoration: "none" }}>
@@ -315,7 +342,11 @@ function Body_Home() {
           </Link>
         </div>
         {/* Why */}
-        <Words words="Vì sao bạn nên Order trên GrabFood?"></Words>
+        <div className="container-sm">
+          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            Vì sao bạn nên Order trên GrabFood?{" "}
+          </h2>
+        </div>
         <div className="container-sm">
           <ul className="list-unstyled">
             <li className="li-check">
@@ -369,7 +400,11 @@ function Body_Home() {
           </ul>
         </div>
         {/* What is grab food */}
-        <Words words="Những câu hỏi thường gặp"></Words>
+        <div className="container-sm">
+          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+            Những câu hỏi thường gặp{" "}
+          </h2>
+        </div>
         <WhatsGrabFood
           title="GrabFood là gì?"
           describe="Lunch, Bún Cá Chấm Gốc Đa - Vũ Thạnh for Dinner! We are here to satisfy your hunger with a wide selection of merchant partners in Vietnam. GrabFood là dịch vụ Giao đồ ăn nhanh nhất tại Việt Nam. Chúng tôi đã sắp xếp tất cả các món ăn, nhà hàng và thực phẩm yêu thích của bạn một cách hợp lý để giúp bạn tìm được đồ ăn dễ dàng và nhanh chóng nhất có thể. Tìm và đặt món ăn yêu thích trên khắp Việt Nam - đặt đồ ăn trực tuyến chỉ bằng vài thao tác, từ món Lifted Coffee & Brunch cho bữa sáng, đến Maazi Indian – Nhà Hàng Ấn Độ cho bữa trưa, đến Bún Cá Chấm Gốc Đa – Vũ Thạnh cho bữa tối! Hãy để chúng tôi xua tan cơn đói của bạn nhờ một loạt đối tác bán đồ ăn ở Việt Nam."

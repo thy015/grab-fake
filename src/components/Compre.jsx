@@ -1,6 +1,5 @@
 import { Drawer } from "antd";
 import "./CSS.css";
-import Words from "./Words";
 import { Checkbox } from "antd";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -187,7 +186,7 @@ function Compre() {
             className="container-sm container-compre"
             style={{ height: "800px" }}
           >
-            <Words words={"Best Seller"}></Words>
+            
             {/* on click drawer */}
 
             <div

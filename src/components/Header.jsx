@@ -21,7 +21,7 @@ function Header() {
     <div
       className={
         color
-          ? "header-active flex justify-center items-center z-10 h-20 bg-white left-0 right-0 shadow p-3 mb-5 fixed"
+          ? "header-active flex justify-center items-center z-10 h-20 bg-white left-0 right-0 shadow p-3 mb-5 fixed "
           : "header-nonactive flex justify-center items-center z-10 h-20 bg-transparent left-0 right-0 fixed"
       }
     >
@@ -37,7 +37,7 @@ function Header() {
           />
         </Link>
         <div className="btn-group ml-auto mr-6">
-          <button type="button" class="btn btn-light ml-2 mr-2  shopping-bag">
+          <button type="button" class="btn btn-light ml-2 mr-2 shopping-bag ">
             <img src={shop} alt="bag" srcset="" />
           </button>
           <button type="button" class="btn btn-light ml-2 mr-2 ">

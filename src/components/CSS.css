@@ -5,6 +5,7 @@
 body,html{
     margin: 0;
     padding: 0;
+    object-fit: cover;
 }
 /* header */
 @media (max-width:451px) {
@@ -12,7 +13,7 @@ body,html{
         width: 120px;
     }
 }
-@media (max-width: 536px) {
+@media (max-width: 586px) {
     button.btn.btn-light.shopping-bag {
         display: none;
     }
@@ -23,65 +24,42 @@ body,html{
         height: 130px;
     }
     /* home */
-/* fluid img */
+    /* fluid img */
     .fluid-img{
         display:none;
     }
+    /* search box */
+    .search-box{
+        margin-left: 0;
+    }
+    .container-search-box{
+        width: 95%;
+        height: 300px;
+        top: 8%;
+    }
+    .search-input{
+        width: 100%;
+    }
+    .btn-search{
+        width: 100%;
+    }
+ 
+    .uu-dai{
+        margin-top: 350px;
+        left: 0;
+        font-size: 25px;
+    }
+
   }
-  @media (max-width:760px) {
+  @media (max-width:767px) {
+
+  }
+  @media (max-width:1150px) {
 
   }
 
 /* home */
-/* fluid img */
-
-/* search box */
-.container-search-box{
-    width: 350px;
-    height: 400px;
-    z-index: 3;
-    top: 16%;
-    position: absolute;
-    background-color: white;
-}
-.wrap-input{
-    padding: 24px 0px 0px 15px;
-}
-#af{
-    font-weight: 700;
-}
-#where{
-    font-weight: 650;
-    margin-bottom: 20px;
-}
-#search-input{
-    width: 290px;
-    padding: 10px;
-    padding-left: 37px;
-    margin: 10px 10px 10px 0;
-}
-button.btn.btn-search {
-    background-color: #00B14F;
-    width: 290px;
-    height: 50px;
-    font-weight: 650;
-    color: white;
-}
-img#location {
-    position: absolute;
-    top: 63.5%;
-    left: 10%;
-    height: 30px;
-}
-img#des {
-    position: absolute;
-    bottom: 30%;
-    right: 11%;
-}
 /* card holder */
-.card{
-    width: 350px
-}
 .containerCard {
     margin: 0 12px;
     margin-top: 60px;
@@ -90,35 +68,10 @@ img#des {
     justify-content: space-around; 
 }
 
-.card {
-    margin-bottom: 20px;
-  }
-
-.card-img-top{
-    width: 100%; 
-    height: 150px; 
-}
-
-.row.row-card {
-    margin: 0 21px;
-}
-.span-card{
-    margin:5px 0 0 7px;
-}
-.span-star{
-    width: 23px;
-}
-.span-clock{
-    margin-left: 15px;
-}
 .btn-fluid{
     width: 95.5%;
     margin: 98px 0px 30px 30px;
     height: 48px;
-}
-.container-button{
-    max-width: 1250px;
-    margin-top: -50px;
 }
 .card:hover{
     cursor: pointer;

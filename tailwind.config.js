@@ -14,6 +14,7 @@ export default {
       screens:{
         'mobile':{'max':'480px'},
         'small':{'max':'600px'},
+        'extend-md':{'max':'768px'},
         'medium':{'max':'1133px'}
       },
     },

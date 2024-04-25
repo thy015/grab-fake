@@ -56,6 +56,12 @@ body,html{
     .whatsgrabfood{
         margin-left: 0;
     }
+    .ml-10{
+        margin-left: 0;
+    }
+    img.absolute.z-\[2\].ml-16.pt-2{
+        margin-left: 25px;
+    }
     /* footer */
 
   }
@@ -84,6 +90,15 @@ body,html{
         margin-top: 20px;
         padding-bottom: 30px;
     }
+    /* Detail */
+    .wrap-detail{
+        margin-left: 0;
+        justify-content: normal;
+    }
+    .card-detail{
+        width: 45%!important;
+        margin-right: 4%;
+    }
   }
 
 /* home */
@@ -100,7 +115,6 @@ button.btn.btn-fluid:hover{
     color: #00B14F;
     font-weight: 700;
 }
-
 /* why should order */
 .li-check::before{
     content: "";
@@ -112,57 +126,6 @@ button.btn.btn-fluid:hover{
     transform: translateY(32%);
     background-repeat: no-repeat;
     background-image:url("../images/check.png");
-}
-/* Detail */
-.search-header {
-    height: 70px;
-    width: 73%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-input#search-detail {
-    width: 380px;
-    height: 40px;
-    padding: 0 0 0 40px;
-    position: relative;
-    z-index: 5;
-}
-img#img-location{
-    margin-left: 25px;
-    z-index: 3;
-    left: 24%;
-    position: absolute;
-}
-.container-detail{
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-.container-sm.container-slide {
-    width: 1250px;
-}
-#input-fluid-detail{
-    width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #f7f7f7;
-    border-color: transparent;
-    padding: 20px;
-    position: relative;
-    padding: 20px 0 20px 60px;
-}
-#search-icon{
-    position: absolute;
-    z-index: 2;
-    padding: 11px 0px 20px 20px;
-}
-.card-slide{
-    display: flex;
-}
-.divider-detail{
-    height: 8px;
-    background: #f7f7f7;
-    width: 100%;
 }
 /* compre */
 .container-compre{

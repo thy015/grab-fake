@@ -295,7 +295,7 @@ function Body_Home() {
           <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-8">
             Vì sao bạn nên Order trên GrabFood?{" "}
           </h2>
-          <ul className="block ml-10 w-[96%]">
+          <ul className="ul-group block ml-10 w-[96%]">
             <li className="li-check mb-4 text-justify relative ">
               <span className="fw-bold">Nhanh nhất </span>
               <span>

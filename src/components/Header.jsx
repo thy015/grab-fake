@@ -3,6 +3,7 @@ import "./CSS.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import shop from "../images/shopping-bag.png"
+import { Dropdown } from "bootstrap";
 function Header() {
   //change nav color when scrolling
   const [color, setColor] = useState(false);
@@ -53,12 +54,12 @@ function Header() {
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="#">
-                  Action
+                  Tiếng Việt
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
-                  Another action
+                  English
                 </a>
               </li>
             </ul>

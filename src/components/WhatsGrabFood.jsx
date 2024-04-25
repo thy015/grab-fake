@@ -14,7 +14,7 @@ function WhatsGrabFood({title,describe,describe2,title_more,describe_more,title_
     <>
       <div className="container-sm">
         <div className="">
-        <div className="ml-8 w-[97.5%]">
+        <div className="ml-8 w-[97.5%] whatsgrabfood">
         <h3 className="text-justify font-bold mb-4">{title}</h3>
         <p className="text-justify w-[98%]">{describe}</p>
         <p className="what-des2">{describe2}</p>

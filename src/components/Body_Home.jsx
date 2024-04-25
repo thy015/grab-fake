@@ -64,6 +64,63 @@ function Body_Home() {
       describe: "Phải xa đành thôi sao anh gian dối người ơi",
     },
   ];
+  //categoriesData
+  const categoriesData = [
+    {
+      cardTit: "Pizza",
+      src: "https://pastaxi-manager.onepas.vn/content/uploads/articles/2amthuc/nhahang/10pizzangonsg/diem-danh-10-dia-chi-an-pizza-ngon-tuyet-o-Sai-gon-anh3.jpg",
+    },
+    {
+      cardTit: "Trà Sữa",
+      src: "https://cdn.tgdd.vn/Files/2021/08/10/1374160/hoc-cach-pha-tra-sua-o-long-dai-loan-thom-ngon-chuan-vi-ai-cung-me-202108100039248020.jpg",
+    },
+    {
+      cardTit: "Cơm Tấm",
+      src: "https://lamsonfood.com/wp-content/uploads/2022/02/com-tam-duoc-nhieu-nguoi-yeu-thich.jpg",
+    },
+    {
+      cardTit: "Bánh Mì",
+      src: "https://www.bigc.vn/files/cam-nang-mua-sam-27-11-2023-14-35-21/vao-bep-cung-go-27-11-2023-14-39-10/cach-lam-banh-mi-thit-nuong.jpg",
+    },
+    {
+      cardTit: "Lẩu cá",
+      src: "https://cdn.tgdd.vn/Files/2020/06/18/1263878/cach-nau-lau-ca-bop-thit-beo-mem-ngot-ma-khong-tanh-202202150950507162.jpg",
+    },
+    {
+      cardTit: "Bún đậu",
+      src: "https://static.vinwonders.com/production/bun-dau-mam-tom-ha-noi-1.jpg",
+    },
+    {
+      cardTit: "Món Hàn",
+      src:"https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/162906/Originals/Tokbokki%2002.jpeg",
+    },
+    {
+      cardTit: "Món Ấn",
+      src:"https://goldensmiletravel.com/uploads/images/2023/09/06/image9-1676535943-928-width1500height1000-1693975156.jpg",
+    },
+    {
+      cardTit: "Món Nhật",
+      src:"https://cdn.tgdd.vn/Files/2020/07/23/1273077/doi-gio-cho-ca-gia-dinh-voi-mon-com-ca-ri-kieu-nhat-ban-tre-em-cung-an-duoc-202007231448514435.jpg",
+    },
+    {
+      cardTit: "Món Trung",
+      src:"https://daynauan.info.vn/wp-content/uploads/2019/05/dau-hu-tu-xuyen-noi-tieng.jpg",
+    },
+    {
+      cardTit: "Bánh ướt lòng gà",
+      src:"https://cdn.tgdd.vn/Files/2022/01/03/1408896/5-quan-banh-uot-long-ga-ngon-o-quan-10-tp-hcm-202201032312339468.jpg",
+    },
+    {
+      cardTit: "Bánh bèo",
+      src:"https://daylambanh.edu.vn/wp-content/uploads/2017/07/cach-lam-banh-beo-chay-1.jpg",
+    },
+  ];
+  const whyShouldOrder=[
+    {
+      cause:'Nhanh nhất ',
+      explain:'- GrabFood cung cấp dịch vụ giao đồ ăn nhanh nhất thị trường.'
+    },
+  ]
   return (
     <>
       <img
@@ -77,13 +134,13 @@ function Body_Home() {
         {/* swiper */}
         {/* words */}
         <div className="container-sm">
-          <h2 className="uu-dai mb-8 mt-40 relative text-3xl font-bold left-9">
+          <h2 className="small:mt-[350px] uu-dai mb-8 mt-48 relative text-3xl font-bold left-9">
             Ưu đãi GrabFood tại{" "}
             <span className="inputPlace text-Ggreen">InputPlace</span>
           </h2>
         </div>
       </div>
-      <div className="swiper w-full medium:w-3/4">
+      <div className="swiper w-full medium:w-3/4 cursor-pointer">
         {/* nav */}
         <Swiper
           className="w-full xl:max-w-[1200px]"
@@ -203,205 +260,84 @@ function Body_Home() {
         {/* Nav button */}
         <div className="container-sm container-button">
           <Link to={"/Detail"}>
-            <button type="button" class="btn btn-fluid">
+            <button
+              type="button"
+              class="btn btn w-[96%] h-12 mt-[24px] ml-8 mb-8 btn-fluid small:ml-4"
+            >
               See all promotion
             </button>
           </Link>
         </div>
         {/* Words */}
         <div className="container-sm">
-          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+          <h2 className="uu-dai mb-12 mt-8 ml-[-10px] relative text-3xl font-bold left-11">
             There's something for everyone!{" "}
           </h2>
         </div>
         {/* Food Category */}
+
         <div className="container">
           <Link to={"/Detail"} style={{ textDecoration: "none" }}>
-            <div className="containerCard">
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://pastaxi-manager.onepas.vn/content/uploads/articles/2amthuc/nhahang/10pizzangonsg/diem-danh-10-dia-chi-an-pizza-ngon-tuyet-o-Sai-gon-anh3.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Pizza</h5>
+            <div className="flex flex-wrap justify-around ml-3">
+              {categoriesData.map((c, index) => (
+                <div key={index} className="card border-0 w-72">
+                  <img src={c.src} className="card-img-top h-44" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title mb-4 font-semibold">{c.cardTit}</h5>
+                  </div>
                 </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://cdn.tgdd.vn/Files/2021/08/10/1374160/hoc-cach-pha-tra-sua-o-long-dai-loan-thom-ngon-chuan-vi-ai-cung-me-202108100039248020.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Trà Sữa</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://lamsonfood.com/wp-content/uploads/2022/02/com-tam-duoc-nhieu-nguoi-yeu-thich.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Cơm Tấm</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://www.bigc.vn/files/cam-nang-mua-sam-27-11-2023-14-35-21/vao-bep-cung-go-27-11-2023-14-39-10/cach-lam-banh-mi-thit-nuong.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Bánh Mì</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://cdn.tgdd.vn/Files/2020/06/18/1263878/cach-nau-lau-ca-bop-thit-beo-mem-ngot-ma-khong-tanh-202202150950507162.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Lẩu cá</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://static.vinwonders.com/production/bun-dau-mam-tom-ha-noi-1.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Bún đậu</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/162906/Originals/Tokbokki%2002.jpeg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Món Hàn</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://goldensmiletravel.com/uploads/images/2023/09/06/image9-1676535943-928-width1500height1000-1693975156.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Món Ấn</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://cdn.tgdd.vn/Files/2020/07/23/1273077/doi-gio-cho-ca-gia-dinh-voi-mon-com-ca-ri-kieu-nhat-ban-tre-em-cung-an-duoc-202007231448514435.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Món Nhật</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://daynauan.info.vn/wp-content/uploads/2019/05/dau-hu-tu-xuyen-noi-tieng.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Món Trung</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://cdn.tgdd.vn/Files/2022/01/03/1408896/5-quan-banh-uot-long-ga-ngon-o-quan-10-tp-hcm-202201032312339468.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Bánh ướt lòng gà</h5>
-                </div>
-              </div>
-              <div className="card border-0" style={{ width: "280px" }}>
-                <img
-                  src="https://daylambanh.edu.vn/wp-content/uploads/2017/07/cach-lam-banh-beo-chay-1.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Bánh bèo</h5>
-                </div>
-              </div>
+              ))}
             </div>
           </Link>
         </div>
         {/* Why */}
         <div className="container-sm">
-          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-8">
             Vì sao bạn nên Order trên GrabFood?{" "}
           </h2>
-        </div>
-        <div className="container-sm">
-          <ul className="list-unstyled">
-            <li className="li-check">
-              <div className="spacing-order">
-                <div></div>
-                <span className="fw-bold why-words">Nhanh nhất </span>
-                <span className="why-words">
-                  - GrabFood cung cấp dịch vụ giao đồ ăn nhanh nhất thị trường.
-                </span>
-              </div>
+          <ul className="ul-group block ml-10 w-[96%]">
+            <li className="li-check mb-4 text-justify relative ">
+              <span className="fw-bold">Nhanh nhất </span>
+              <span>
+                - GrabFood cung cấp dịch vụ giao đồ ăn nhanh nhất thị trường.
+              </span>
             </li>
-            <li className="li-check">
-              <div className="spacing-order">
-                <span className="fw-bold why-words">Dễ dàng nhất </span>
-                <span className="why-words">
-                  - Giờ đây, bạn chỉ cần thực hiện vài cú nhấp chuột hoặc chạm
-                  nhẹ là đã có thể đặt đồ ăn. Hãy đặt đồ ăn trực tuyến hoặc tải
-                  xuống siêu ứng dụng Grab của chúng tôi để có trải nghiệm nhanh
-                  hơn và thú vị hơn.
-                </span>
-              </div>
+            <li className="li-check mb-4 text-justify relative">
+              <span className="fw-bold">Dễ dàng nhất </span>
+              <span>
+                - Giờ đây, bạn chỉ cần thực hiện vài cú nhấp chuột hoặc chạm nhẹ
+                là đã có thể đặt đồ ăn. Hãy đặt đồ ăn trực tuyến hoặc tải xuống
+                siêu ứng dụng Grab của chúng tôi để có trải nghiệm nhanh hơn và
+                thú vị hơn.
+              </span>
             </li>
-            <li className="li-check">
-              <div className="spacing-order">
-                <span className="fw-bold why-words">Đáp ứng mọi nhu cầu </span>
-                <span className="why-words">
-                  - Từ món ăn đặc sản địa phương đến các nhà hàng được ưa thích,
-                  nhiều lựa chọn đa dạng chắc chắn sẽ luôn làm hài lòng khẩu vị
-                  của bạn.
-                </span>
-              </div>
+            <li className="li-check mb-4 text-justify relative">
+              <span className="fw-bold why-words">Đáp ứng mọi nhu cầu </span>
+              <span className="why-words">
+                - Từ món ăn đặc sản địa phương đến các nhà hàng được ưa thích,
+                nhiều lựa chọn đa dạng chắc chắn sẽ luôn làm hài lòng khẩu vị
+                của bạn.
+              </span>
             </li>
-            <li className="li-check">
-              <div className="spacing-order">
-                <span className="fw-bold why-words">Thanh toán dễ dàng </span>
-                <span className="why-words">
-                  - Giao và nhận đồ ăn thật dễ dàng. Thanh toán bằng GrabPay
-                  thậm chí còn dễ dàng hơn nữa.
-                </span>
-              </div>
+            <li className="li-check mb-4 text-justify relative">
+              <span className="fw-bold">Thanh toán dễ dàng </span>
+              <span>
+                - Giao và nhận đồ ăn thật dễ dàng. Thanh toán bằng GrabPay thậm
+                chí còn dễ dàng hơn nữa.
+              </span>
             </li>
-            <li className="li-check">
-              <div className="spacing-order">
-                <span className="fw-bold why-words">Nhiều quà tặng hơn </span>
-                <span className="why-words">
-                  - Tích điểm GrabRewards cho mỗi đơn hàng của bạn và sử dụng
-                  điểm thưởng để đổi lấy nhiều ưu đãi hơn.
-                </span>
-              </div>
+            <li className="li-check mb-4 text-justify relative">
+              <span className="fw-bold">Nhiều quà tặng hơn </span>
+              <span>
+                - Tích điểm GrabRewards cho mỗi đơn hàng của bạn và sử dụng điểm
+                thưởng để đổi lấy nhiều ưu đãi hơn.
+              </span>
             </li>
           </ul>
         </div>
         {/* What is grab food */}
         <div className="container-sm">
-          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-11">
+          <h2 className="uu-dai mb-12 mt-12 relative text-3xl font-bold left-8">
             Những câu hỏi thường gặp{" "}
           </h2>
         </div>

@@ -12,7 +12,7 @@ function FluidButton({ buttonText }) {
     <div className="container-max">
       <div className="container-sm">
         {show && (
-          <>
+          <>   
             <WhatsGrabFood
               title="Làm cách nào để đặt đồ ăn ở Việt Nam?"
               describe="Sau đây là cách đơn giản nhất để đặt đồ ăn qua GrabFood khi bạn ở Việt Nam:"
@@ -23,7 +23,6 @@ function FluidButton({ buttonText }) {
               title_more2="3. Giao hàng"
               describe_more2=" - GrabFood đã thiết kế một hành trình phục vụ khách hàng liền mạch để bạn có thể thưởng thức món ăn một cách trọn vẹn. Chúng tôi sẽ gửi cho bạn email và tin nhắn SMS tức thời xác nhận đơn đặt hàng của bạn và thời gian giao hàng dự kiến. Sau đó chúng tôi sẽ giao ngay đồ ăn cho bạn."
             />
-
             <WhatsGrabFood
               title="GrabFood có cung cấp dịch vụ giao đồ ăn 24x7 không?"
               describe="Chúng tôi chỉ biết một điều duy nhất, đó là đồ ăn, vậy nên tất nhiên chúng tôi cung cấp dịch vụ này rồi. Xin lưu ý, mặc dù chúng tôi là đối tác giao đồ ăn phục vụ 24x7, nhưng một số nhà hàng trong danh mục của chúng tôi có thể hạn chế giao đồ ăn khuya hoặc có thể không phục vụ đối với các đơn đặt hàng. Tuy nhiên, chúng tôi đã liệt kê danh sách những nhà hàng phục vụ nhu cầu ăn khuya của bạn trong mục Late Night Delivery (Giao hàng khuya)."
@@ -69,57 +68,55 @@ function FluidButton({ buttonText }) {
         )}
         <button
           type="button"
-          class="btn w-[94%] h-12 mt-[24px] ml-12 mb-8 font-bold border-[#747373] border "
+          class= "btn w-[94%] h-12 mt-[-50px] ml-12 mb-8 btn-fluid small:ml-4"
           onClick={handleClick}
         >
           {buttonText}
         </button>
+       
       </div>
-      {/* footer */}
-      <div className="container-footer">
-        <div className="container-sm container-wrap-content">
-          <div class="wrap-content">
-            <img
-              style={{ width: "150px", margin: "10px" }}
+      {/* wrap content */}
+      <div className="bg-white h-[550px] w-full flex items-center">
+        <div className="container-sm inline-flex">
+          <div class="text-center items-center flex flex-col w-[530px] ml-[7%]">
+            <img className="w-40 mb-10"
               src="https://food.grab.com/static/page-home/bottom-food-options.svg"
               alt="Image"
             ></img>
-            <h4 class="fw-bold" style={{ fontSize: "18px" }}>
+            <h4 class="fw-bold" >
               Curated restaurant
             </h4>
-            <p style={{ fontSize: "14px" }}>
+            <p >
               From small bites to big meals, we won't limit your appetite. Go
               ahead and order all you want.
             </p>
           </div>
-          <div class="wrap-content">
-            <img
-              style={{ width: "150px", margin: "20px" }}
+          <div class="text-center mt-6 items-center flex flex-col w-[530px] ml-[7%]">
+            <img className="w-40 mb-10"
               src="https://food.grab.com/static/images/ilus-cool-features-app.svg"
               alt="Image"
             ></img>
-            <h4 class="fw-bold" style={{ fontSize: "18px" }}>
+            <h4 class="fw-bold">
               More cool features available on the app
             </h4>
-            <p style={{ fontSize: "14px", marginRight: "15px" }}>
+            <p >
               Download Grab app to use other payment methods and enjoy seamless
               communication with your driver.
             </p>
+            <div className="flex">
             <a href="https://apps.apple.com/us/app/grab-%C4%91%E1%BA%B7t-xe-giao-%C4%91%E1%BB%93-%C4%83n/id647268330?l=vi&af_prt=food.grab.com&c=direct&is_retargeting=true&pid=other_websites">
               <img
-                className="appstore"
+                className="appstore mr-2"
                 src="https://food.grab.com/static/images/logo-appstore.svg"
-                style={{ marginRight: "18px" }}
               ></img>
             </a>
-            <span>
               <a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=vi_VN&pid=other_websites&c=direct&is_retargeting=true&af_prt=food.grab.com">
                 <img
-                  className="appstore"
+                  className="appstore ml-2"
                   src="https://food.grab.com/static/images/logo-playstore.svg"
                 ></img>
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </div>

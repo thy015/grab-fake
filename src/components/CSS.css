@@ -13,7 +13,7 @@ body,html{
         width: 120px;
     }
 }
-@media (max-width: 586px) {
+@media (max-width: 596px) {
     button.btn.btn-light.shopping-bag {
         display: none;
     }
@@ -43,39 +43,52 @@ body,html{
     .btn-search{
         width: 100%;
     }
- 
     .uu-dai{
-        margin-top: 350px;
         left: 0;
-        font-size: 25px;
+        font-size: 24px;
     }
+    .swiper-slide{
+        margin-right: 100px!important;
+    }
+    .ul-group{
+        margin-left: 0;
+    }
+    .whatsgrabfood{
+        margin-left: 0;
+    }
+    /* footer */
 
   }
-  @media (max-width:767px) {
-
+  @media (min-width:752px) and (max-width:880px) {
+    .swiper-slide{
+        margin-right: 100px!important;
+    }
   }
-  @media (max-width:1150px) {
-
+  @media (max-width:1000px) {
+    /* footer */
+    .flex.ml-11{
+        display: block;
+    }
+    .respon-div{
+        height: 130px;
+    }
+    .border-bottom.ml-11{
+        width: 90%;
+        margin-top: 0;
+    }
+    .flex.items-center.justify-between{
+        display: block;
+    }
+    .flex.mr-2 {
+        margin-left: 40px;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
   }
 
 /* home */
 /* card holder */
-.containerCard {
-    margin: 0 12px;
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-}
 
-.btn-fluid{
-    width: 95.5%;
-    margin: 98px 0px 30px 30px;
-    height: 48px;
-}
-.card:hover{
-    cursor: pointer;
-}
 /* button */
 button.btn.btn-fluid {
     border: solid #747373;
@@ -87,37 +100,8 @@ button.btn.btn-fluid:hover{
     color: #00B14F;
     font-weight: 700;
 }
-/* category */
-.uu-dai#category{
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
-.col-sm {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
 /* why should order */
-.why-words{
-    font-size: 15px;
-}
-.check{
-    width: 15px;
-    height: 20px;
-}
-.order-space{
-    margin-left: 10px;
-}
-.spacing-order{
-    box-sizing: border-box;
-    margin-bottom: 15px;
-}
-li{
-    text-align: justify;
-    position: relative;
-}
 .li-check::before{
     content: "";
     left: -30px;
@@ -128,125 +112,6 @@ li{
     transform: translateY(32%);
     background-repeat: no-repeat;
     background-image:url("../images/check.png");
-}
-
-ul.list-unstyled {
-    box-sizing: border-box;
-    display: block;
-    margin-left: 70px;
-    width: 92%;
-}
-/* WhatisGrabFood */
-.container-title{
-    margin-left: 32px;
-    width: 97.5%;
-    
-}
-.what-des{
-    width: inherit;
-
-}
-.what-title{
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.what-title,
-.what-des{
-    text-align: justify;
-}
-.border-what{
-    height: 10px;
-    margin-bottom: 20px;
-    width: 98%;
-}
-/* Style Li */
-.li-more{
-    list-style: none;
-    width: 98%;
-}
-.li-more::before{
-    content: "";
-    background-image: none;
-}
-.btn-readmore{
-    margin-top: 30px
-}
-.container-words {
-    margin: 60px 0 -45px 3px;
-}
-/* Wrapcontent */
-.container-footer{
-    background-color: #f7f7f7;
-    height: 550px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.wrap-content{
-    display: inline-block;
-    width: 550px;
-    height: 300px;
-}
-.container-sm.container-wrap-content {
-    display: inherit;
-    justify-content: space-around;
-    align-items: baseline;
-}
-.appstore{
-    cursor: pointer;
-}
-/* footer */
-.footer{
-    width: 100%;
-    height: 430px;
-    background-color: #00B14F;
-}
-.wrap-li{
-    width: 280px;
-    height: 76px;
-}
-.footer-all-wrap {
-    display: flex;
-    margin-left: 35px;
-}
-.footer-li{
-    list-style: none;
-    color: white;
-    margin: 30px 0 30px 0;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 17px;
-}
-.border-footer{
-    height: 0px;
-    margin-left: 25px;
-    width: 96%;
-}
-.wrap-img {
-    margin-top: 30px;
-}
-.footer-img{
-    cursor: pointer;
-    margin: 20px;
-}
-.span-li{
-    list-style: none;
-    margin-right: 30px;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-}
-.span-wrap{
-    justify-content: space-between;
-    display: flex;
-}
-.span-wrap-li{
-    display: flex;
-}
-.container-max-footer{
-    background-color: #00B14F;
 }
 /* Detail */
 .search-header {

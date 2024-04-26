@@ -128,16 +128,12 @@ button.btn.btn-fluid:hover{
     background-image:url("../images/check.png");
 }
 /* compre */
-.container-compre{
-    padding-top: 20px;
-}
+
 img.add-button {
     margin-left: 181px;
     margin-bottom: 20px;
 }
-.row.row-cols-1.row-cols-md-3.g-4 {
-    margin-left: 10px;
-}
+
 /* footer */
 :where(.css-dev-only-do-not-override-1kuana8).ant-drawer .ant-drawer-body {
     flex: 1;
@@ -145,11 +141,7 @@ img.add-button {
     min-height: 0;
     padding:0px
 }
-.inputContent {
-    margin: 5px;
-    display: flex;
-    justify-content: space-between;
-}
+
 .ant-drawer-body {
     overflow: auto;
 }
@@ -161,8 +153,4 @@ img.add-button {
     flex-shrink: 0;
     padding: 8px 16px;
     border-top: 1px solid rgba(5, 5, 5, 0.06);
-}
-.checkbox-option {
-    display: flex;
-    justify-content: space-between;
 }

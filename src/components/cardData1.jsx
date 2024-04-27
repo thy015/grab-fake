@@ -57,6 +57,7 @@ import food4 from "../images/food-4.png";
       price: "18.000",
     },
   ];
+
 const cardData = [
     {
       val: "0",
@@ -67,7 +68,7 @@ const cardData = [
       min: "30",
       dist: "2km",
       describe: "50K off, combo trưa chỉ 40K, ngoài ra không tặng kèm gì",
-      options:optionsMD
+      options:optionsMD,
     },
     {
       val: "1",

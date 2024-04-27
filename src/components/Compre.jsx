@@ -85,252 +85,145 @@ function Compre() {
                 <div className="flex items-start mt-[10px]">
                   <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
                   <p className="ml-2">{selectedCard.describe}</p>
-              <p className="font-bold text-[#00a5cf] ml-5 cursor-pointer">
+                  <p className="font-bold text-[#00a5cf] ml-5 cursor-pointer">
                     Xem chi tiết
-              </p>
+                  </p>
                 </div>
               </div>
             </div>
             {/* swiper */}
-
           </div>
           {/* slide */}
         </div>
-        <div className="border-top"></div>
+      <div className="pt-10 bg-[#f7f7f7]">
+      <div className="container-sm">
+      <h1 className=" uu-dai mb-8 mt-8 relative text-3xl font-bold left-11">
+            Best Seller
+          </h1>
+          
         <div
-          className="container-max-compre"
-          style={{ backgroundColor: "#f7f7f7" }}
-        >
+          className="bg-[#f7f7f7]">
           {/* best seller */}
-          <div className="container-sm" style={{ height: "800px" }}>
+          <div className="container-sm h-[800px] ">
+            <div className="flex flex-wrap wrap-card">
             {/* on click drawer */}
+            <div className="card w-[30%] h-1/4 ml-4 mb-4 ">
+              <div
+                className="flex"
+                onClick={() => {
+                  setVisible(true);
+                }}
+              >
+                {/* Nội dung thẻ card */}
 
-            <div
-              className="row row-cols-1 row-cols-md-3 g-4"
-              onClick={() => {
-                setVisible(true);
-              }}
-            >
-              <div className="col">
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
-
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500", width: "80px" }}>
-                          119.000
-                        </p>
-                        <img className="add-button" src={add}></img>
-                      </div>
-                    </div>
-                  </div>
+                <div className="w-1/2">
+                  <img
+                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                  />
                 </div>
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
-
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img className="add-button" src={add}></img>
-                      </div>
-                    </div>
+                <div className="w-1/2">
+                  <div className="card-body">
+                    <p className="card-title">Combo 2 người - C</p>
+                    <p className="text-[#9a9a9a] text-[15px]">
+                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
+                      gồm 2x Tương Cà
+                    </p>
+                    <p className="font-medium w-20">119.000</p>
+                    <img className="float-right mb-4" src={add}></img>
                   </div>
                 </div>
               </div>
-              <div className="col">
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
+            </div>
 
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img className="add-button" src={add}></img>
-                      </div>
-                    </div>
-                  </div>
+            <div className="card w-[30%] h-1/4 ml-4 mb-4 ">
+              <div
+                className="flex"
+                onClick={() => {
+                  setVisible(true);
+                }}
+              >
+                {/* Nội dung thẻ card */}
+
+                <div className="w-1/2">
+                  <img
+                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                  />
                 </div>
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
-
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img className="add-button" src={add}></img>
-                      </div>
-                    </div>
+                <div className="w-1/2">
+                  <div className="card-body">
+                    <p className="card-title">Combo 2 người - C</p>
+                    <p className="text-[#9a9a9a] text-[15px]">
+                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
+                      gồm 2x Tương Cà
+                    </p>
+                    <p className="font-medium w-20">119.000</p>
+                    <img className="float-right mb-4" src={add}></img>
                   </div>
                 </div>
               </div>
-              <div className="col">
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
+            </div>
+            <div className="card w-[30%] h-1/4 ml-4 flex mb-4">
+              <div
+                className="flex"
+                onClick={() => {
+                  setVisible(true);
+                }}
+              >
+                {/* Nội dung thẻ card */}
 
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img className="add-button" src={add}></img>
-                      </div>
-                    </div>
-                  </div>
+                <div className="w-1/2">
+                  <img
+                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                    className="card-img-top w-full h-36 ml-4 mt-2 "
+                  />
                 </div>
-                <div
-                  className="card"
-                  style={{ width: "385px", height: "220px" }}
-                >
-                  {/* Nội dung thẻ card */}
-                  <div className="row g-0">
-                    <div className="col-md-4">
-                      <img
-                        style={{ margin: "15px" }}
-                        src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                        className="card-img"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <div className="card-body" style={{ marginLeft: "15px" }}>
-                        <p
-                          className="card-title"
-                          style={{ fontWeight: "400", fontSize: "16px" }}
-                        >
-                          Combo 2 người - C
-                        </p>
-
-                        <p
-                          className="card-text"
-                          style={{ color: "#9a9a9a", fontSize: "15px" }}
-                        >
-                          Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã
-                          bao gồm 2x Tương Cà
-                        </p>
-                        <p style={{ fontWeight: "500" }}>119.000</p>
-                        <img className="add-button" src={add}></img>
-                      </div>
-                    </div>
+                <div className="w-1/2">
+                  <div className="card-body">
+                    <p className="card-title">Combo 2 người - C</p>
+                    <p className="text-[#9a9a9a] text-[15px]">
+                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
+                      gồm 2x Tương Cà
+                    </p>
+                    <p className="font-medium w-20">119.000</p>
+                    <img className="float-right mb-4" src={add}></img>
                   </div>
                 </div>
               </div>
-              {/* more card */}
+            </div>
+            <div className="card w-[30%] h-1/4 ml-4 flex mb-4">
+              <div
+                className="flex"
+                onClick={() => {
+                  setVisible(true);
+                }}
+              >
+                {/* Nội dung thẻ card */}
+
+                <div className="w-1/2">
+                  <img
+                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                    className="card-img-top w-full h-36 ml-4 mt-2 "
+                  />
+                </div>
+                <div className="w-1/2">
+                  <div className="card-body">
+                    <p className="card-title">Combo 2 người - C</p>
+                    <p className="text-[#9a9a9a] text-[15px]">
+                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
+                      gồm 2x Tương Cà
+                    </p>
+                    <p className="font-medium w-20">119.000</p>
+                    <img className="float-right mb-4" src={add}></img>
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
+        </div>
+        </div>
         </div>
       </div>
       {/* Drawer */}
@@ -338,9 +231,7 @@ function Compre() {
         <Drawer
           visible={visible}
           footer={
-            <button
-              className="btn btn-success text-white bg-[#00B14F] float-right border-transparent"
-            >
+            <button className="btn btn-success text-white bg-[#00B14F] float-right border-transparent">
               Add to basket - 119.000 đ
             </button>
           }
@@ -401,7 +292,7 @@ function Compre() {
               <div className="wrap-checkbox">
                 {/* value 0 1 2 from cardData val 0*/}
                 {selectedCard.options
-                  .filter((o,index) => [0,1,2].includes(index))
+                  .filter((o, index) => [0, 1, 2].includes(index))
                   .map((o) => (
                     <div key={o.index} className="flex justify-between">
                       <Checkbox value={o.value}>
@@ -418,8 +309,8 @@ function Compre() {
             <div className="p-6">
               <h5 className="font-semibold">Chọn món ăn kèm</h5>
               <div className="">
-              {selectedCard.options
-                  .filter((o,index) => [3,4,5].includes(index))
+                {selectedCard.options
+                  .filter((o, index) => [3, 4, 5].includes(index))
                   .map((o) => (
                     <div key={o.index} className="flex justify-between">
                       <Checkbox value={o.value}>
@@ -435,10 +326,12 @@ function Compre() {
             {/*  */}
             <div className="h-2 w-full bg-[#f7f7f7]"></div>
             <div className="p-6">
-            <h5 className="font-semibold">Chọn nước</h5>
+              <h5 className="font-semibold">Chọn nước</h5>
               <div className="">
-              {selectedCard.options
-                  .filter((o,index) => [6,7,8,9,10,11,12].includes(index))
+                {selectedCard.options
+                  .filter((o, index) =>
+                    [6, 7, 8, 9, 10, 11, 12].includes(index)
+                  )
                   .map((o) => (
                     <div key={o.index} className="flex justify-between">
                       <Checkbox value={o.value}>
@@ -453,7 +346,7 @@ function Compre() {
             </div>
             <div className="h-2 w-full bg-[#f7f7f7]"></div>
             <div className="p-6">
-            <h5 className="font-semibold">Chọn nước</h5>
+              <h5 className="font-semibold">Chọn nước</h5>
             </div>
           </div>
         </Drawer>

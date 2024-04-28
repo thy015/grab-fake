@@ -62,8 +62,10 @@ body,html{
     img.absolute.z-\[2\].ml-16.pt-2{
         margin-left: 25px;
     }
-    /* footer */
-
+    /* compre */
+    .flex.items-start.mt-\[10px\]{
+        display: block;
+    }
   }
   @media (min-width:752px) and (max-width:880px) {
     .swiper-slide{
@@ -90,6 +92,12 @@ body,html{
         margin-top: 20px;
         padding-bottom: 30px;
     }
+    .flex.ml-11{
+        margin-left: 0;
+    }
+    .border-bottom.ml-11{
+        margin-left: 0;
+    }
     /* Detail */
     .wrap-detail{
         margin-left: 0;
@@ -99,14 +107,32 @@ body,html{
         width: 45%!important;
         margin-right: 4%;
     }
+    .nav-ol{
+        margin-left: -30px;
+    }
     /* compre */
-    .wrap-card{
-        display: block;
+    .nav-ol-x2{
+        margin-left: -60px;
     }
     .card.w-\[30\%\].h-1\/4.ml-4.mb-4{
         width: 100%;
     }
+    .pt-10.bg-\[\#f7f7f7\]{
+        height: 1200px;
+    }
+    .content-compre{
+        margin-left: -30px;
+    }
+    .card-image{
+        width: 40%;
+    }
+    .card-content{
+        width: 60%;
+        margin-left: 40px;
+    }
+
   }
+
 
 /* home */
 /* card holder */

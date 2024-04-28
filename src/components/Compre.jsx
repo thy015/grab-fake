@@ -24,9 +24,9 @@ function Compre() {
     <>
       <div className="container-detail">
         <div className="pt-9 pl-9 h-96">
-          <div className="container-sm">
+          <div className="container-sm ">
             {/* nav */}
-            <div className=" mt-10">
+            <div className=" mt-10 nav-ol-x2">
               <ol className="flex">
                 <div className="flex">
                   <li className="mr-2">
@@ -56,7 +56,7 @@ function Compre() {
             </div>
             {/* display content */}
 
-            <div className="ml-8">
+            <div className="ml-8 content-compre">
               <h1 className="font-bold">{selectedCard.cardTitle}</h1>
               <p className="">{selectedCard.cardText}</p>
 
@@ -82,9 +82,9 @@ function Compre() {
                 </div>
                 <span style={{ marginRight: "20px" }}>Giờ mở cửa</span>
                 <span>Hôm nay 07:00-22:50</span>
-                <div className="flex items-start mt-[10px]">
+                <div className="flex items-start mt-[10px]">      
                   <img src="https://food.grab.com/static/images/icons/icon-promo-tag.svg"></img>
-                  <p className="ml-2">{selectedCard.describe}</p>
+                  <p className="ml-2">{selectedCard.describe}</p>         
                   <p className="font-bold text-[#00a5cf] ml-5 cursor-pointer">
                     Xem chi tiết
                   </p>
@@ -116,13 +116,13 @@ function Compre() {
               >
                 {/* Nội dung thẻ card */}
 
-                <div className="w-1/2">
+                <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
                     className="card-img-top w-full h-36 ml-4 mt-2  "
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 card-content">
                   <div className="card-body">
                     <p className="card-title">Combo 2 người - C</p>
                     <p className="text-[#9a9a9a] text-[15px]">
@@ -145,13 +145,40 @@ function Compre() {
               >
                 {/* Nội dung thẻ card */}
 
-                <div className="w-1/2">
+                <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
                     className="card-img-top w-full h-36 ml-4 mt-2  "
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 card-content">
+                  <div className="card-body">
+                    <p className="card-title">Combo 2 người - C</p>
+                    <p className="text-[#9a9a9a] text-[15px]">
+                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
+                      gồm 2x Tương Cà
+                    </p>
+                    <p className="font-medium w-20">119.000</p>
+                    <img className="float-right mb-4" src={add}></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card w-[30%] h-1/4 ml-4 flex mb-4">
+              <div
+                className="flex"
+                onClick={() => {
+                  setVisible(true);
+                }}
+              >
+                {/* Nội dung thẻ card */}
+                <div className="w-1/2 card-image">
+                  <img
+                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                  />
+                </div>
+                <div className="w-1/2 card-content">
                   <div className="card-body">
                     <p className="card-title">Combo 2 người - C</p>
                     <p className="text-[#9a9a9a] text-[15px]">
@@ -173,41 +200,13 @@ function Compre() {
               >
                 {/* Nội dung thẻ card */}
 
-                <div className="w-1/2">
+                <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                    className="card-img-top w-full h-36 ml-4 mt-2 "
+                    className="card-img-top w-full h-36 ml-4 mt-2  "
                   />
                 </div>
-                <div className="w-1/2">
-                  <div className="card-body">
-                    <p className="card-title">Combo 2 người - C</p>
-                    <p className="text-[#9a9a9a] text-[15px]">
-                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
-                      gồm 2x Tương Cà
-                    </p>
-                    <p className="font-medium w-20">119.000</p>
-                    <img className="float-right mb-4" src={add}></img>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-[30%] h-1/4 ml-4 flex mb-4">
-              <div
-                className="flex"
-                onClick={() => {
-                  setVisible(true);
-                }}
-              >
-                {/* Nội dung thẻ card */}
-
-                <div className="w-1/2">
-                  <img
-                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                    className="card-img-top w-full h-36 ml-4 mt-2 "
-                  />
-                </div>
-                <div className="w-1/2">
+                <div className="w-1/2 card-content">
                   <div className="card-body">
                     <p className="card-title">Combo 2 người - C</p>
                     <p className="text-[#9a9a9a] text-[15px]">
@@ -240,48 +239,28 @@ function Compre() {
           }}
           width={500}
         >
-          <div
-            className="card border-0"
-            style={{ width: "385px", height: "150px" }}
-          >
-            {/* Nội dung thẻ card */}
-            <div className="row g-0">
-              <div className="col-md-4">
-                <img
-                  style={{ margin: "15px" }}
-                  src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                  className="card-img"
-                />
-              </div>
-              <div className="col-md-8">
-                <div className="card-body">
-                  <p
-                    className="card-title"
-                    style={{ fontWeight: "400", fontSize: "16px" }}
-                  >
-                    Combo 2 người - C
-                  </p>
+                   <div className="card w-full h-1/4 ml-4 flex mb-4 border-0">
+             <div className="flex">
+                {/* Nội dung thẻ card */}
 
-                  <p
-                    className="card-text"
-                    style={{ color: "#9a9a9a", fontSize: "15px" }}
-                  >
-                    Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao gồm
-                    2x Tương Cà
-                  </p>
-                  <p
-                    style={{
-                      fontWeight: "500",
-                      width: "80px",
-                      marginTop: "-10px",
-                    }}
-                  >
-                    119.000
-                  </p>
+                <div className="w-1/2 card-image">
+                  <img
+                    src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
+                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                  />
                 </div>
+                <div className="w-1/2 card-content">
+                  <div className="card-body">
+                    <p className="card-title">Combo 2 người - C</p>
+                    <p className="text-[#9a9a9a] text-[15px]">
+                      Phần ăn kèm khoai tây chiên (L) và Nước uống (L). Đã bao
+                      gồm 2x Tương Cà
+                    </p>
+                    <p className="font-medium w-20">119.000</p>
+                  </div>
+                  </div>
               </div>
-            </div>
-          </div>
+              </div>
           <div className="h-2 w-full bg-[#f7f7f7]"></div>
 
           <div className="body-drawer">

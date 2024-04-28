@@ -61,7 +61,7 @@ function Detail() {
         <div className="h-2 w-full bg-[#f7f7f7]"></div>
         <div className="container-sm">
           {/* nav */}
-          <div className="ml-10 mt-7">
+          <div className="ml-10 mt-7 nav-ol">
             <ol className="flex">
               <div className="flex">
               <li className="mr-2">

@@ -38,27 +38,27 @@ function Header() {
           />
         </Link>
         <div className="btn-group ml-auto mr-6">
-          <button type="button" class="btn btn-light ml-2 mr-2 shopping-bag ">
+          <button type="button" className="btn btn-light ml-2 mr-2 shopping-bag ">
             <img src={shop} alt="bag" srcset="" />
           </button>
-          <button type="button" class="btn btn-light ml-2 mr-2 ">
+          <button type="button" className="btn btn-light ml-2 mr-2 ">
             Đăng nhập/Đăng ký
           </button>
           <button
             type="button"
-            class="btn btn-light ml-2 mr-2 dropdown-toggle"
+            className="btn btn-light ml-2 mr-2 dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             VI
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Tiếng Việt
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   English
                 </a>
               </li>

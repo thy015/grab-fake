@@ -123,13 +123,7 @@ body,html{
     .content-compre{
         margin-left: -30px;
     }
-    .card-image{
-        width: 40%;
-    }
-    .card-content{
-        width: 60%;
-        margin-left: 40px;
-    }
+
 
   }
 
@@ -141,7 +135,7 @@ body,html{
 button.btn.btn-fluid {
     border: solid #747373;
     color: #747373;
-    font-weight: 700;
+    font-weight: 600;
 }
 button.btn.btn-fluid:hover{
     border: solid #00B14F;

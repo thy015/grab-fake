@@ -62,7 +62,7 @@ function Compre() {
 
               <img
                 src={selectedCard.img}
-                className="card-img-top w-full h-36 hidden "
+                className="card-img-top w-full hidden "
                 alt="..."
               />
               <div className="">
@@ -119,7 +119,7 @@ function Compre() {
                 <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                    className="card-img-top w-full ml-4 mt-2  "
                   />
                 </div>
                 <div className="w-1/2 card-content">
@@ -148,7 +148,7 @@ function Compre() {
                 <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                    className="card-img-top w-full ml-4 mt-2  "
                   />
                 </div>
                 <div className="w-1/2 card-content">
@@ -175,7 +175,7 @@ function Compre() {
                 <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                    className="card-img-top w-full ml-4 mt-2  "
                   />
                 </div>
                 <div className="w-1/2 card-content">
@@ -203,7 +203,7 @@ function Compre() {
                 <div className="w-1/2 card-image">
                   <img
                     src="https://media1.nguoiduatin.vn/media/vuong-thi-thao/2017/11/28/mds05c.JPG"
-                    className="card-img-top w-full h-36 ml-4 mt-2  "
+                    className="card-img-top w-full ml-4 mt-2  "
                   />
                 </div>
                 <div className="w-1/2 card-content">
